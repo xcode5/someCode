@@ -1,0 +1,189 @@
+<!--通用头部 开始-->
+<div class="top_out">
+    <div class="top_menu">
+        <div class="top_menu_in">
+            <div class="top_menu_in_l">
+                <ul class="navlist">
+                    <li><a target="_blank" href="index.htm">为顺利领取手游礼包请在本站下载的app内注册<font color="#0000ff">全新账号</font>,以后玩本站其他手游时均无需再次注册.<font color="#0000ff">客服Q:303059970.</font></a></li>
+                    
+                    
+                    <li><span style="text-decoration:underline"><a target="_blank" href="http://cdn2.lp.sifuba.net/100000011076/100000011076_1000_b7ac36344212d947dd0b6f79654e485e.apk">本站APP</a></span></li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="top_menu_in_r">
+                
+                <div id="session_false">
+                    <!--<script type="text/javascript">
+                        if ($.cookie(cookie_name) != null && $.cookie(cookie_name) != "" && $.cookie(cookie_name) != undefined && $.cookie(cookie_name) != "null") {
+                            document.write("<div class='reg_logb'><a class='welcome'>欢迎您：</a><a class='auth_name' href='user.html'/*tpa=http://r7.cgamex.com/user.html*/>"+$.cookie(cookie_name)+"</a>|<a class='logout_btn' href='javascript:void(0);'></a></div>");
+                        }else{
+                            document.write("<div class='reg_logb'><a href='javascript:void(0);' class='login_btn'></a>|<a href='javascript:void(0);' class='reg_btn'></a></div>");
+                        }
+                    </script>-->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    
+    var browser={
+        versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                               android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                               iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                               iPad: u.indexOf('iPad') > -1, //是否iPad
+                               webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                               };
+                               }(),
+                               language:(navigator.browserLanguage || navigator.language).toLowerCase()
+                               }
+                               
+                               if(browser.versions.ios||browser.versions.android||browser.versions.mobile){
+                               //window.location.href = "http://r7.cgamex.com/m";
+                               }
+                               
+                               //console.log("语言版本: "+browser.language);
+                               //console.log(" 是否为移动终端: "+browser.versions.mobile);
+                               //console.log(" ios终端: "+browser.versions.ios);
+                               //console.log(" android终端: "+browser.versions.android);
+                               //console.log(" 是否为iPhone: "+browser.versions.iPhone);
+                               //console.log(" 是否iPad: "+browser.versions.iPad);
+                               //console.log(navigator.userAgent);
+</script>
+
+
+<div class="clear"></div>
+<div class="game_nav">
+    <div class="game_nav_inner">
+        <ul>
+            <li nav_flag="youxizhongxin" class="yx_cur"><a href="index1.html" title="游戏">&nbsp;&nbsp;&nbsp;游戏</a></li>
+												<li nav_flag="fenlei"><a href="all.html" title="分类">分类</a></li>
+                                                <li nav_flag="kaifu" class="has_sub">
+                                                    <a href="kf.html" title="开服">开服</a>
+                                                </li>
+								</ul>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+      $("li.has_sub").hover(function () {
+                            $(this).children("ul").slideDown(0);
+                            }, function () {
+                            $(this).children("ul").slideUp(0);
+                            })
+      });
+    </script>
+
+
+
+<!-- 登录窗口相关 -->
+<div class="clear"></div>
+<div class="modal login_modal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title">登录C游账号</h4>
+            </div>
+            <div class="modal-body">
+                <form class="login_form">
+                    <div class="form-group">
+                        <label for="login_username">账号</label> <input type="email" class="form-control" id="login_username" placeholder="请输入C游账号">
+                            </div>
+                    <div class="form-group">
+                        <label for="login_pass">密码</label> <input type="password" class="form-control" id="login_pass" placeholder="请输入C游密码">
+                            </div>
+                    <div class="submit_login_btn">
+                        <a href="javascript:void(0);" class="button button-primary  button-rounded">立即登录</a> <a href="javascript:void(0);" id="btn_to_reg" class="button button-caution button-pill button-small ml5">快速注册</a>
+                    </div>
+                    <a class="label label-danger login_msg"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal reg_modal" role="dialog">
+    
+</div>
+
+
+<script type="text/javascript">
+    if (get_query_parame("init") == "reg") {
+        $(".reg_modal").modal({
+                              keyboard : false
+                              });
+    } else if (get_query_parame("init") == "login") {
+        $(".login_modal").modal({
+                                keyboard : false
+                                });
+    }
+
+$(function() {
+		$("li.has_sub").hover(function() {
+                              $(this).children("ul").slideDown(100);
+                              }, function() {
+                              $(this).children("ul").slideUp(100);
+                              })
+  
+		$("#btn_to_login").on("click", function() {
+                              $(".reg_msg").hide(0);
+                              $(".login_msg").hide(0);
+                              $(".reg_modal").modal("hide");
+                              $(".login_modal").modal({
+                                                      keyboard : false
+                                                      });
+                              })
+  
+		$("#btn_to_reg").on("click", function() {
+                            $(".reg_msg").hide(0);
+                            $(".login_msg").hide(0);
+                            $(".login_modal").modal("hide");
+                            $(".reg_modal").modal({
+                                                  keyboard : false
+                                                  });
+                            })
+  });
+    </script>
+
+
+<!-- 登录窗口相关结束 -->
+
+<div class="modal down-package-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm dpm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">-选择下载</h4>
+            </div>
+            <div id="down_package_url_list" class="modal-body">
+                <ul>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--通用头部 结束-->

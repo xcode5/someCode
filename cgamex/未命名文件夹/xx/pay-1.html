@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" type="image/ico" href="favicon-1.ico" tppabs="http://m.cgamex.com/favicon.ico">
+    <title>充值中心</title>
+    <script src="jquery.min-1.js" tppabs="http://m.cgamex.com/static/js/plugin/jquery.min.js"></script>
+    <script src="angular.js" tppabs="http://m.cgamex.com/static/js/plugin/angular.js"></script>
+    <script src="jquery.cookie-1.js" tppabs="http://m.cgamex.com/static/js/plugin/jquery.cookie.js"></script>
+    <script src="jquery.linq.min.js" tppabs="http://m.cgamex.com/static/js/plugin/jquery.linq.min.js"></script>
+    <script src="layer.js" tppabs="http://m.cgamex.com/static/js/plugin/layer.js"></script>
+    <script src="gamelist-1.js" tppabs="http://m.cgamex.com/static/js/gamelist.js"></script>
+    <script type="text/javascript">
+	    gameInfo = $.Enumerable.From(gameInfo)
+	    .Where(function (p) {
+	        return p.can_pay;
+	    }).ToArray();
+    </script>
+    <script src="config-1.js" tppabs="http://m.cgamex.com/static/js/config.js"></script>
+    <script src="common.js" tppabs="http://m.cgamex.com/static/js/common.js"></script>
+    <script src="modules.js" tppabs="http://m.cgamex.com/static/js/modules.js"></script>
+    <link href="bootstrap.min-1.css" tppabs="http://m.cgamex.com/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="buttons.css" tppabs="http://m.cgamex.com/static/css/buttons.css" rel="stylesheet">
+    <link href="common.css" tppabs="http://m.cgamex.com/static/css/common.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="page" ng-controller="Pay">
+    <header class="head">
+	    <a onclick="window.history.go(-1)" class="logo pis-ab icon"></a>
+	
+	    <h1 class="title txa-c">充值</h1>
+	    <a class="list-nav pis-ab icon"></a>
+	    <ul class="sub-nav pis-ab">
+	        <li class="font-hide"><a href="index-1.htm" tppabs="http://r7.cgamex.com/m">最新开服</a></li>
+	        <li class="font-hide"><a href="index-1.html" tppabs="http://r7.cgamex.com/m/user/index.html">会员中心</a></li>
+	        <li class="font-hide"><a href="pay-1.html" tppabs="http://r7.cgamex.com/m/pay.html">我要充值</a></li>
+	    </ul>
+	</header>
+    
+    
+    <div class="main">
+        <form novalidate="novalidate" style="padding: 10px;">
+            <div class="form-group">
+                <label class=" control-label" for="uName">输入充值账号</label>
+
+                <div class="">
+                    <input type="text" ng-blur="getUserInfo()" class="form-control" name="uName" ng-model="payParameter.userName" id="uName"
+                           placeholder="输入充值账号">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="payToType">充值到</label>
+                <select ng-model="payParameter.defaultPayToType" class="form-control"
+                        ng-options="m.TypeVal as m.TypeName for m in payToTypeDefine" id="payToType">
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payType">选择充值方式</label>
+                <select ng-model="payParameter.payType" class="form-control"
+                        ng-options="m.TypeId as (m.TypeName+'支付') for m in payTypes" id="payType">
+                </select>
+            </div>
+            <div class="form-group" ng-show="isPayToGame">
+                <label for="gameId">选择充值游戏</label>
+                <input type="text" class="form-control" ng-click="showSelectGameLayer()" name="gameId"
+                       data-gameid="{{payParameter.gameInfo.gameid}}" ng-model="payParameter.gameInfo.game_name"
+                       id="gameId"
+                       placeholder="选择游戏">
+            </div>
+            <div  id="selServer" class="form-group" ng-show="isPayToGameServer">
+                <label for="serverId">选择区服</label>
+                <input type="text" class="form-control" ng-click="showSelectServerLayer()" name="serverId"
+                       data-serverid="{{payParameter.serverInfo.serverid_our}}"
+                       ng-model="payParameter.serverInfo.servername"
+                       id="serverId" placeholder="选择区服">
+            </div>
+            <div class="form-group" ng-show="isPayToGame">
+                <label for="gameId">请选择要充值的角色</label>
+                <select ng-model="defaultRoleId" class="form-control"
+                        ng-options="m.roleid as m.rolename for m in payParameter.roleInfo" id="roleId">
+                </select>
+            </div>
+            <div class="form-group" ng-show="!isCardPay">
+                <label for="selPayMoney">充值金额</label>
+                <select ng-model="payParameter.defaultPayMoney" class="form-control"
+                        ng-options="m.Item as m.Desc for m in payMoneyDefine" id="selPayMoney">
+                </select>
+                <input style="margin-top: 10px;" type="number" class="form-control" name="payMoney"
+                       ng-model="payParameter.payMoney" id="payMoney"
+                       placeholder="自定义金额">
+            </div>
+            <div class="form-group" ng-show="isCardPay">
+                <label for="cardType">请选择充值卡类型</label>
+                <select ng-model="payParameter.defaultCardType" class="form-control"
+                        ng-options="m.type_id as m.name for m in cardTypeDefine" id="cardType">
+                </select>
+            </div>
+            <div class="form-group" ng-show="isCardPay">
+                <label for="cardMoney">请选择充值金额</label>
+                <select ng-model="payParameter.defaultCardMoney" class="form-control"
+                        ng-options="m.item_amount as m.item_name for m in cardInfo.items" id="cardMoney">
+                </select>
+            </div>
+            <div class="form-group" ng-show="isCardPay">
+                <label for="serverId">输入充值卡账号</label>
+                <input type="text" class="form-control" name="cardAccount" ng-model="payParameter.cardAccount"
+                       id="cardAccount" placeholder="输入充值卡账号">
+            </div>
+            <div class="form-group" ng-show="isCardPay">
+                <label for="serverId">输入充值卡密码</label>
+                <input type="text" class="form-control" name="cardPass" ng-model="payParameter.cardPass"
+                       id="cardPass" placeholder="输入充值卡密码">
+            </div>
+            <button type="submit" id="payBtn" ng-disabled="!canSubmit" ng-click="submitPay()" class="button mt20 button-caution button-rounded btn-block">
+                提交充值
+            </button>
+        </form>
+    </div>
+    
+</div>
+<script src="init.js" tppabs="http://m.cgamex.com/static/js/init.js"></script>
+
+</body>
+</html>

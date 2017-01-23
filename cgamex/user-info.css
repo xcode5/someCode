@@ -1,0 +1,51 @@
+.head-info{
+    background: url(ba-img.jpg)/*tpa=http://m.cgamex.com/static/images/ba-img.jpg*/ no-repeat 0 0/100%;
+    height: 128px;
+}
+.head-info > div{
+    vertical-align: top;
+    margin-top: 20px;
+}
+.head-img{margin-right: 20px;}
+.head-img img{width: 90px;height: 90px;}
+.user-info{
+    line-height: 24px;
+    padding-top: 7px;
+}
+.user-info .log-out{
+    font-size: 12px;
+    font-weight: normal;
+    padding:0 8px;
+    background: #fff;
+    color:#ff4351;
+    margin-left:10px;
+    border-radius: 3px;
+}
+.user-info em{color: #ff4351;}
+
+.info-tab-hd{
+    line-height: 44px;
+    background: #eee;
+    font-size: 14px;
+}
+.info-tab-hd span{margin: 0 20px;}
+.info-tab-hd .on{
+    color:#ff4351;
+    border-bottom: #ff4351 3px solid;
+}
+.info-tab-bd{margin-top: 10px;}
+.pack-num p:not(:last-child){
+    color: #3cb4ff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.pack-num i{
+    background: url(tip-icon.png)/*tpa=http://m.cgamex.com/static/images/tip-icon.png*/ no-repeat 0 0;
+    background-size:100%;
+    width: 16px;
+    height: 16px;
+}
+.user-name{
+    font-size: 16px;
+    margin-top: 5px;
+}

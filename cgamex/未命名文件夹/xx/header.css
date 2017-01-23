@@ -1,0 +1,383 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    border: 0 none;
+    font-family: microsoft yahei;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: outside none none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top_out {
+    height: 40px;
+    position: relative;
+
+}
+
+.top_menu a:hover {
+    left: 0;
+    top: 0;
+}
+
+.top_menu {
+    background: url(siteNavBg.png)/*tpa=http://www.cgamex.com/static/images/siteNavBg.png*/ no-repeat;
+    background-position: 0 -115px;
+    background-repeat: repeat-x;
+    line-height: 40px;
+    font-family: Arial;
+    height: 40px;
+    width: 100%;
+    width: 100%;
+    color: #5b5b5b;
+    position: fixed;
+    z-index: 200;
+}
+
+.top_menu_in {
+    height: 53px;
+    margin: 0 auto -26px;
+    position: relative;
+    width: 1000px;
+    z-index: 9999;
+}
+
+.top_menu_in_l {
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    width: 457px;
+}
+
+.top_menu_in_l .navlist {
+    width: 520px;
+}
+
+.top_menu_in_l .navlist li {
+    display: inline;
+    float: left;
+    margin-right: 17px;
+}
+
+.top_menu_in_l a {
+    color: #5b5b5b;
+    display: block;
+    font-size: 14px;
+    padding: 0;
+}
+
+.top_menu_in_l a:hover {
+    color: #2e2e2e;
+   text-decoration: none;
+}
+
+.top_menu_in_r {
+    float: right;
+    height: 35px;
+    margin-left: -50px;
+    width: 450px;
+}
+
+.nav_cur {
+    background-position: 75px center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 10px;
+    width: 90px;
+}
+
+.nav_cur a {
+    color: #f60;
+    display: inline-block;
+    font-size: 14px;
+    height: 35px;
+    padding: 0 10px;
+}
+
+.top_search {
+    float: left;
+    padding-top: 3px;
+    width: 160px;
+}
+
+.sinput {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    height: 25px;
+    outline: medium none;
+    padding-left: 5px;
+    width: 110px;
+}
+
+.ssubmit {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    height: 28px;
+    margin-left: -20px;
+    outline: medium none;
+    width: 32px;
+}
+
+input.ssubmit:hover {
+    opacity: 0.5;
+}
+
+#navdrop {
+    border: 1px solid #323232;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    width: 78px;
+    z-index: 9999999;
+}
+
+ul#newscates {
+    display: block;
+    width: 80px;
+}
+
+ul#newscates li {
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 78px;
+}
+
+ul#newscates li a {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    margin: 0;
+}
+
+#newscates {
+    height: 1px;
+}
+
+.navlist li div.news_bt {}
+
+.navlist li div.news_bt a {
+    height: 20px;
+    position: relative;
+}
+
+.navlist li div.news_bt a:hover {
+    border-bottom: 0 none;
+}
+
+#newscates li a:hover {
+    background: #f60 none repeat scroll 0 0;
+    color: #fff;
+}
+
+.top_menu_in_l .navlist li#newscateout {
+    line-height: 23px;
+    padding-top: 5px;
+}
+
+#newsbt {
+    height: 35px;
+    overflow: hidden;
+}
+
+.top_menu_in_c {
+    float: left;
+    height: 60px;
+    margin-left: 30px;
+    padding-top: 5px;
+    width: 49px;
+}
+
+.top_menu_in_c a {
+    display: block;
+    height: 32px;
+    position: relative;
+    text-indent: -9999px;
+    width: 28px;
+}
+
+.reg_log {
+    border: 1px solid #323232;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    height: 31px;
+    margin-left: -50px;
+    overflow: hidden;
+    padding-top: 1px;
+    position: relative;
+    width: 148px;
+}
+
+.reg_log a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.reg_log a:hover {
+    color: #f60;
+}
+
+.tui_avatar {
+    float: left;
+    height: 30px;
+    padding-left: 10px;
+    width: 35px;
+}
+
+.tui_avatar img {
+    border: 2px solid #f60;
+    border-radius: 20px;
+    height: 26px;
+    width: 26px;
+}
+
+.tui_username {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+    overflow: hidden;
+    width: 84px;
+}
+
+.nav_cur a {
+    cursor: pointer;
+    display: block;
+}
+
+.tsitemap {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff none repeat scroll 0 0;
+    border-color: -moz-use-text-color #666 #666;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    display: none;
+    height: 200px;
+    left: 50%;
+    margin-left: -200px;
+    position: relative;
+    top: -1px;
+    width: 500px;
+    z-index: 2147483647;
+}
+
+.bgw {
+    background-color: #fff;
+}
+
+.top_user_info {
+    height: 35px;
+    overflow: hidden;
+    padding-left: 1px;
+    padding-top: 1px;
+}
+
+.bgw1 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 5px #888;
+}
+
+.bgw1 a {
+    color: #f60;
+}
+
+.topdownpane {
+    background: #fff none repeat scroll 0 0;
+    color: #333;
+    padding: 0 10px;
+}
+
+.topdownpane ul {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.topdownpane ul * {
+    font-size: 14px;
+}
+
+.topdownpane ul li {
+    border-top: 1px solid #eee;
+    color: #333;
+    height: 28px;
+    line-height: 28px;
+}
+
+.tlp_logout {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.tlp_logout a {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.tlp_logout a:hover {
+    color: #f30;
+}
+
+.tlp_orange {
+    color: #f60;
+}
+
+.tlp_green {
+    color: #679706;
+}
+
+.reg_logb {
+    color: #fff;
+    float: right;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: right;
+    width: 250px;
+}
+.reg_logb .welcome{color: #5b5b5b;}
+.reg_logb .auth_name{color: #f30;}
+.reg_logb .auth_name:hover{color: #f30;}
+
+.reg_logb a {
+    color: #5b5b5b;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.reg_logb a:hover {
+    color: #2e2e2e;
+    text-decoration: none;
+}

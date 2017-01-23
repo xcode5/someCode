@@ -1,0 +1,81 @@
+/**
+ * Created by chencong on 16/2/22.
+ */
+.page {
+    margin: auto;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 0;
+}
+
+/*登录*/
+.form .log-logo {
+    margin:80px 85px 30px 85px;
+    text-align: center;
+}
+
+.form div {
+    margin: 0 40px 10px;
+}
+
+.link {
+    color: #ff4351;
+}
+
+.other-login {
+    margin: 30px 20px 0;
+}
+
+.line {
+    height: 1px;
+    background: #ff4351;
+    width: 100%;
+    padding: 0;
+    top: calc(50% - 10px);
+}
+
+.other-login a {
+    padding: 0 5px;
+    background: #fff;
+}
+
+.other-login a img {
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.other-login p {
+    color: #737373;
+}
+
+/*注册*/
+
+/*绑定*/
+.head-info {
+    margin-top: 10px;
+    color: #727272;
+}
+
+.head-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: #ff4351 1px solid;
+    margin-bottom: 10px;
+}
+label.error{
+    display: block;
+    padding: 5px;
+    color: #ff0000;
+    font-weight: 600;
+    /*
+    border: 1px #ff0000 solid;
+    background: #FF9900;
+    margin-top: 2px;
+    border-radius: 5px;
+    */
+}
+.foot-nav{ margin-top: 40px;}

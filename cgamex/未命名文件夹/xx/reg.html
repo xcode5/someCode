@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" type="image/ico" href="favicon-1.ico" tppabs="http://m.cgamex.com/favicon.ico">
+    <title>注册</title>
+    <script src="jquery.min-1.js" tppabs="http://m.cgamex.com/static/js/plugin/jquery.min.js"></script>
+    <script src="angular.js" tppabs="http://m.cgamex.com/static/js/plugin/angular.js"></script>
+    <script src="config-1.js" tppabs="http://m.cgamex.com/static/js/config.js"></script>
+    <script src="layer.js" tppabs="http://m.cgamex.com/static/js/plugin/layer.js"></script>
+    <script src="common.js" tppabs="http://m.cgamex.com/static/js/common.js"></script>
+    <script src="modules.js" tppabs="http://m.cgamex.com/static/js/modules.js"></script>
+    <link href="bootstrap.min-1.css" tppabs="http://m.cgamex.com/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="common.css" tppabs="http://m.cgamex.com/static/css/common.css" rel="stylesheet">
+    <link href="login-and-reg.css" tppabs="http://m.cgamex.com/static/css/login-and-reg.css" rel="stylesheet">
+    <link href="buttons.css" tppabs="http://m.cgamex.com/static/css/buttons.css" rel="stylesheet">
+</head>
+<body>
+<div class="page" >
+   	<header class="head">
+	    <a onclick="window.history.go(-1)" class="logo pis-ab icon"></a>
+	
+	    <h1 class="title txa-c">注册</h1>
+	    <a class="list-nav pis-ab icon"></a>
+	    <ul class="sub-nav pis-ab">
+	        <li class="font-hide"><a href="index-1.htm" tppabs="http://r7.cgamex.com/m">最新开服</a></li>
+	        <li class="font-hide"><a href="index-1.html" tppabs="http://r7.cgamex.com/m/user/index.html">会员中心</a></li>
+	        <li class="font-hide"><a href="pay-1.html" tppabs="http://r7.cgamex.com/m/pay.html">我要充值</a></li>
+	    </ul>
+	</header>
+   	
+    <div class="main content">
+        <form ng-controller="Register" class="form reg-f" id="regForm" novalidate="novalidate"  ng-submit="submitForm(regForm.$valid)" name="regForm">
+            <h3 class="log-logo">
+                <img src="logo.png" tppabs="http://m.cgamex.com/static/images/logo.png" alt="">
+            </h3>
+
+            <div class="pis-re">
+                <label class="account pis-ab"></label>
+                <input type="text" autocomplete="off" placeholder="用户名/手机号/QQ号" ng-required="true" ng-minlength="6" ng-maxlength="20" ng-model="user.uname" class="input" id="uname" name="uname">
+                <label class="error" ng-show="regForm.uname.$error.required">请输入您的账号</label>
+                <label class="error" ng-show="regForm.uname.$error.minlength">账号至少为6位</label>
+                <label class="error" ng-show="regForm.uname.$error.maxlength">账号最多为位20位</label>
+            </div>
+            <div class="pis-re">
+                <label class="pswd pis-ab"></label>
+                <input type="password" autocomplete="off" placeholder="密码要好记点" ng-required="true" ng-minlength="6" ng-maxlength="20" ng-model="user.passwd" id="passwd" name="passwd" class="input">
+                <label class="error" ng-show="regForm.passwd.$error.required">请输入您的密码</label>
+                <label class="error" ng-show="regForm.passwd.$error.minlength">密码至少为6位</label>
+                <label class="error" ng-show="regForm.passwd.$error.maxlength">密码最多为位20位</label>
+            </div>
+            <div class="pis-re">
+                <label class="name pis-ab"></label>
+                <input type="password" autocomplete="off" placeholder="再来一发密码" ng-required="true" ng-model="user.repasswd" id="repasswd" pw-check="passwd" name="repasswd" class="input">
+                <label class="error" ng-show="regForm.repasswd.$error.required">请输入您的密码</label>
+                <label class="error" ng-show="!regForm.repasswd.$pristine && regForm.repasswd.$invalid">两次密码输入不一致</label>
+            </div>
+            <div>
+                <button type="button" ng-click="doReg()" ng-disabled="regForm.$invalid" class="button btn-block button-caution button-rounded button-large f-white dis-b">立即注册</button>
+            </div>
+            <div class="tip">
+                <p><a class="r link" href="login.html" tppabs="http://r7.cgamex.com/m/user/login.html">返回登录</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <footer class="foot-nav">
+    <ul class="pis-ab">
+        <li class="l"><a href="index-1.htm" tppabs="http://r7.cgamex.com/m">首页</a></li>
+        <li class="l"><a href="index-1.html" tppabs="http://r7.cgamex.com/m/user/index.html">会员中心</a></li>
+        <li class="l"><a href="pay-1.html" tppabs="http://r7.cgamex.com/m/pay.html">我要充值</a></li>
+    </ul>
+    <div style="clear: both;"></div>
+    <p class="txa-c pis-re">
+                    返利QQ：303059970&nbsp; 玩家QQ群 574365795<br/>
+                ©2015-2020&nbsp;cgamex.com 版权所有
+		<br>粤ICP备16030268号
+	    <span style="display: inline-block;">
+		    <script type="text/javascript">
+				var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cspan id='cnzz_stat_icon_1260239884'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260239884%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+		</span>
+		<!-- 
+        <br>抵制不良游戏，拒绝盗版游戏。
+        <br>注意自我保护，谨防受骗上当。
+        <br>适度游戏益脑，沉迷游戏伤身。
+        <br>合理安排时间，享受健康生活。
+         -->
+    </p>
+</footer>
+
+</div>
+<script src="init.js" tppabs="http://m.cgamex.com/static/js/init.js"></script>
+</body>
+</html>

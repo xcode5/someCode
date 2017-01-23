@@ -1,0 +1,442 @@
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p, img, strong, span, cite { margin: 0; padding: 0; border: 0; font-family: microsoft yahei; }
+body { font-size: 16px; color: #333; }
+ul, li { list-style: outside none; }
+table { border-collapse: collapse; }
+a { text-decoration: none; color: #333; }
+a:hover { color: #d70404; position: relative; /* left:1px; top:1px;*/ }
+.clear { clear: both; height: 0; margin-top: 0; overflow: hidden; width: 100%; }
+.mt10 { margin-top: 10px; }
+.mt5 { margin-top: 5px; }
+a.ml5 { margin-left: 5px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+.mt30 { margin-top: 30px; }
+.padding10 { padding: 10px; }
+.pt20 { padding-top: 15px; }
+.font12 { font-size: 12px; }
+.font13 { font-size: 13px; }
+.font14 { font-size: 14px; }
+.agent_text { font-size: 15px; font-weight: 600; }
+.agent_content dd { font-size: 14px; text-indent: 18px; line-height: 50px; }
+.agent_content i { text-decoration: underline; cursor: pointer; font-weight: 600; color: #ff0000; }
+form, input, button { outline: none; }
+a { text-decoration: none; outline: none; }
+a:active { star: expression(this.onFocus=this.blur()); }
+/**/
+.game_top { height: 100px; width: 1000px; margin: 0 auto; }
+.game_nav { width: 100%; height: 70px; background: #474747; }
+.game_nav_inner { width: 1000px; margin: 0 auto; line-height: 70px; }
+.game_nav_inner ul { float: left; }
+.game_nav_inner ul li { float: left; width: 100px; text-align: center; display: inline; }
+.game_nav_inner ul li a { display: block; color: #fff; font-size: 15px; }
+
+.game_top_logo { padding-top: 15px; }
+.game_content_out { width: 1000px; margin: 0 auto; padding-bottom: 10px; position: relative; }
+.game-list-title { height: 46px; }
+.game-list-title-in h3 { height: 46px; line-height: 46px; color: #fff; text-align: center; margin: 0 auto; font-size: 18px; }
+.game-total { float: right; padding-top: 5px; font-size: 16px; }
+.game-total span { color: #ff4a39; font-size: 18px; }
+.game-nodata { text-align: center; height: 20px; line-height: 20px; padding: 30px 0; }
+.pagelist { text-align: center; margin: 20px 0; padding: 20px 0; }
+.pagelist span { display: inline-block; margin: 0 1px; }
+.pagelist a { padding: 4px 10px; border: 1px solid #ccc; color: #666; }
+.pagelist a:hover { background: #ff4a39; color: #fff; border: 1px solid #ca7b72; }
+.pagelist a.now { background: #ff4a39; color: #fff; border: 1px solid #ca7b72; }
+.game_linkpath { font-size: 14px; padding: 20px 0; width: 1000px; margin: 0 auto; }
+.game_linkpath a { color: #ff4a39; }
+.mod-box-3 { width: 270px; padding: 0 0; overflow: hidden; }
+.mod-box-3 .hd { height: 25px; line-height: 25px; overflow: hidden; }
+.mod-box-3 .hd h2 { font-size: 14px; color: #000; }
+.mod-box-3 .hd span a { color: #333; font-size: 12px; padding-right: 10px; line-height: 25px; font-family: "\5b8b\4f53"; }
+.mod-box-3 .bd { }
+.rank-tab { float: right; padding: 0 5px 0 0; }
+.rank-tab li { float: left; margin-right: 3px; }
+.rank-tab li a { display: block; width: 58px; height: 25px; font-size: 14px; color: #fff; text-align: center; line-height: 24px; cursor: pointer; }
+.rank-tab li a.current { background-position: -200px -500px; }
+.pr-list { padding: 0; }
+.pr-list li { height: 36px; line-height: 36px; clear: both; border-bottom: 1px solid #ebebeb; vertical-align: bottom; padding: 2px 0; }
+.pr-list li a { color: #333; }
+.pr-list li em { display: inline; float: left; width: 22px; background: #e0e0e0; height: 22px; line-height: 22px; text-align: center; color: #686868; font-family: 'microsoft yahei'; font-size: 16px; font-style: normal; margin: 6px 15px 0 0; border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; -webkit-border-radius: 2px; }
+.pr-list li em.up { color: #fff; background: #f15d4d; }
+.pr-list li .img-area { display: none; }
+.pr-list li .txt-area { display: none; }
+.pr-list li .title { width: 240px; float: right; margin-left: -50px; overflow: hidden; height: 35px; overflow: hidden; }
+.pr-list li .title a { font-size: 14px; font-family: "Microsoft YaHei"; }
+.pr-list li .title strong { width: 175px; overflow: hidden; display: inline-block; height: 35px; line-height: 35px; font-weight: 400; }
+.pr-list li .title span { color: #999; font-size: 12px; overflow: hidden; float: right; display: inline-block; height: 35px; line-height: 35px; }
+.ph_text h3 { font-family: "Microsoft YaHei"; font-size: 14px; }
+.ph_text h3 a { font-size: 14px; }
+.pr-list li.top { height: 80px; overflow: hidden; padding: 7px 0px 5px 0px; }
+.pr-list li.top em { margin: 4px 15px 0 0; transition: none; height: 70px; line-height: 70px; }
+.pr-list li.top .img-area { width: 70px; height: 70px; float: left; display: inline; position: relative; margin: 3px 15px 0 0; }
+.pr-list li.top .img-area a { display: block; width: 70px; position: relative; cursor: pointer; }
+.pr-list li.top .img-area a img { display: block; width: 70px; height: 70px; border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px; }
+.pr-list li.top .img-area a .cover { width: 70px; height: 70px; background: none; position: absolute; left: 0; top: 0; }
+.pr-list li.top .txt-area { width: 140px; height: 90px; float: left; display: inline; color: #938e33; line-height: 20px; margin-right: -20px; overflow: hidden; }
+.pr-list li.top .txt-area h2 { width: 140px; overflow: hidden; height: 44px; line-height: 22px; margin-bottom: 8px; }
+.pr-list li.top .txt-area h2 a { font-size: 14px; color: #333; display: inline-block; line-height: 22px; }
+.pr-list li.top .txt-area h2 a:hover { color: #f15d4d; }
+.pr-list li.top .txt-area p { overflow: hidden; display: block; color: #999; padding-top: 5px; }
+.pr-list li.top .txt-area p a { background: #d70404; color: #fff; width: 100px; height: 36px; line-height: 36px; text-align: center; display: block; font-size: 16px; border-radius: 3px; }
+.pr-list li.top .txt-area p a:hover { background: #f32a2a; }
+.pr-list li.top .txt-area .download-btn { margin: 3px 0 0 0; }
+.pr-list li.top .txt-area .download-btn a { display: block; width: 61px; height: 26px; line-height: 26px; text-align: center; }
+.pr-list li.top .txt-area .download-btn a:hover { background-position: -150px -100px; }
+.pr-list li.top .title { display: none; }
+.pr-list li.top em.up { }
+.libao_box { color: #333; }
+.libao_name { height: 25px; line-height: 25px; overflow: hidden; color: #666; }
+.libao_sy { height: 25px; line-height: 25px; overflow: hidden; color: #666; }
+.libao_sy span { color: #f15d4d; }
+.game-kaifu-left { float: left; width: 700px; }
+.game-kaifu-right { width: 280px; float: right; }
+.game-intro-info { display: none; }
+.newgame-xykcb-out { border: 1px solid #e0e0e0; height: 402px; }
+.newgame-xykcb-inner { }
+.newgame-xykcb-inner li { height: 35px; line-height: 35px; border-bottom: 1px dashed #e0e0e0; position: relative; font-size: 14px; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-1 { width: 50px; padding-left: 15px; overflow: hidden; position: absolute; z-index: 1; color: #ff9000; transition: all .3s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; -webkit-transition: all .3s; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-2 { width: 85px; position: absolute; left: 65px; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-3 { width: 55px; position: absolute; left: 150px; color: #666; text-align: center; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-4 { width: 75px; margin-right: 15px; position: absolute; left: 203px; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-1 .xykcb-time-1 { display: inline-block; width: 50px; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-1 .xykcb-time-2 { width: 160px; position: absolute; left: 65px; display: inline-block; }
+.newgame-xykcb-inner li div:hover.newgame-xykcb-col-1 { width: 263px; position: absolute; z-index: 1; background: #ff4a39; margin-right: -305px; color: #fff; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-4 img { display: inline-block; margin-left: 3px; position: relative; top: 5px; width: 18px; height: 18px; }
+.newgame-xykcb-inner li.last { border-bottom: 0; }
+.newgame-xykcb-inner li div.newgame-xykcb-col-1 em.now { color: #f15d4d; font-style: normal; }
+.newgame-xykcb-inner li div:hover.newgame-xykcb-col-1 em.now { color: #fff; }
+.game-index-title-xbtm { height: 38px; font-weight: 400; }
+.game-index-title-xbtm span { display: inline-block; border-bottom: 1px solid #e0e0e0; color: #ff9000; font-size: 16px; height: 25px; padding-top: 13px; line-height: 20px; position: relative; top: -2px; width: 250px; float: right; margin-left: -30px; }
+.game-index-title-xbtm span cite { font-style: normal; float: right; color: #ff9000; padding-right: 10px; }
+.game-kaifu-hotgame-border { border: 1px solid #e0e0e0; margin-bottom: 15px; }
+/**/
+.game-kaifu-main { border: 1px solid #e0e0e0; padding: 20px; }
+.game-kaifu-main h1 { font-size: 18px; height: 32px; line-height: 32px; position: relative; text-align: center; margin-bottom: 5px; }
+.game-kaifu-main h1 strong { display: inline-block; position: relative; }
+.game-kaifu-main-left { float: left; width: 150px; height: 150px; border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; -webkit-border-radius: 15px; }
+.game-kaifu-main-left img { width: 150px; height: 150px; }
+.game-kaifu-main-right { float: right; width: 490px; overflow: hidden; }
+.game-kaifu-main-right ul { width: 550px; }
+.game-kaifu-main-right ul li { float: left; width: 235px; overflow: hidden; margin-left: 20px; color: #666; font-size: 14px; height: 30px; line-height: 30px; overflow: hidden; }
+.game-kaifu-main-plat { }
+.game-kaifu-main-plat img { display: inline-block; position: relative; top: 5px; margin-right: 5px; }
+.game-kaifu-main-btn { padding-top: 15px; text-align: center; }
+.game-kaifu-main-btn a { display: inline-block; margin: 0 10px; width: 140px; height: 42px; line-height: 42px; color: #fff; font-size: 18px; padding-left: 20px; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px; }
+.game-kaifu-main-btn a.game-kaifu-libao { background: #f15443 url(iyx_nry_l_ico.png)/*tpa=http://www.cgamex.com/static/images/iyx_nry_l_ico.png*/ 15px -43px no-repeat; background-size: 25px; }
+.game-kaifu-main-btn a:hover.game-kaifu-libao { background-color: #e14938; }
+.game-kaifu-main-btn a.game-kaifu-down { background: #85c226 url(ilibao_down.png)/*tpa=http://www.cgamex.com/static/images/ilibao_down.png*/ 15px 7px no-repeat; background-size: 25px; }
+.game-kaifu-main-btn a:hover.game-kaifu-down { background-color: #6ca810; }
+.game-intro-out { border: 1px solid #e0e0e0; font-size: 16px; }
+.game-intro-title-down { text-align: center; cursor: pointer; line-height: 25px; padding: 10px 15px; }
+.game-intro-title-up { text-align: center; cursor: pointer; line-height: 25px; padding: 10px 15px; display: none; }
+.game-intro-info { padding: 0 15px 10px; font-size: 14px; line-height: 25px; color: #666; }
+.game-kaifu-thumb-title h3 { height: 46px; line-height: 46px; width: 126px; text-align: center; color: #fff; font-size: 18px; }
+.game-kaifu-thumb { border: 1px solid #e0e0e0; padding: 10px; overflow: hidden; }
+.game-kaifu-thumb ul { width: 700px; }
+.game-kaifu-thumb ul li { float: left; width: 160px; margin-right: 12px; }
+.game-kaifu-thumb ul li img { width: 160px; height: 240px; overflow: hidden; }
+.game-kaifu-list { border: 1px solid #e0e0e0; }
+.game-kaifu-list ul { }
+.game-kaifu-list ul li { border-bottom: 1px solid #e0e0e0; padding: 15px; }
+.game-kaifu-list-left { float: left; width: 100px; height: 100px; }
+.game-kaifu-list-left img { width: 100px; height: 100px; border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px; }
+.game-kaifu-list-center { float: left; width: 360px; margin-left: 20px; }
+.game-kaifu-list-right { float: right; width: 170px; margin-left: -50px; }
+.game-kaifu-list-center h3 { font-size: 18px; height: 32px; line-height: 32px; overflow: hidden; }
+.game-kaifu-list-center div { height: 32px; line-height: 32px; overflow: hidden; }
+.game-kaifu-list-center-pt { font-size: 16px; }
+.game-kaifu-list-center-pt img { position: relative; display: inline-block; margin-right: 5px; top: 5px; }
+.game-kaifu-list-center-pt span { padding-right: 10px; padding-left: 5px; }
+.game-kaifu-list-time { font-size: 16px; color: #555; }
+.game-kaifu-list-time span { color: #ff4a39; padding: 0 2px; }
+.game-kaifu-list-right a { display: inline-block; text-align: center; margin: 0 10px; width: 140px; height: 42px; line-height: 42px; color: #fff; font-size: 18px; padding-left: 20px; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px; }
+.game-kaifu-list-right .game-kaifu-list-lqlb a { background: #f15443 url(iyx_nry_l_ico.png)/*tpa=http://www.cgamex.com/static/images/iyx_nry_l_ico.png*/ 15px -43px no-repeat; background-size: 25px; }
+.game-kaifu-list-right .game-kaifu-list-lqlb a:hover { background-color: #e14938; }
+.game-kaifu-list-right .game-kaifu-list-xzyx a { background: #85c226 url(ilibao_down.png)/*tpa=http://www.cgamex.com/static/images/ilibao_down.png*/ 15px 7px no-repeat; background-size: 25px; }
+.game-kaifu-list-right .game-kaifu-list-xzyx a:hover { background-color: #6ca810; }
+.game-kaifu-list-right span { display: block; margin-bottom: 10px; }
+.game-kaifu-list-title { height: 38px; padding-left: 15px; }
+.game-kaifu-list-title span { display: inline-block; border-bottom: 1px solid #e0e0e0; color: #ff4a39; font-size: 16px; height: 25px; padding-top: 13px; line-height: 25px; position: relative; top: -2px; width: 630px; float: right; margin-left: -30px; }
+.game-kaifu-hotgame-title { height: 38px; padding-left: 15px; }
+.game-kaifu-hotgame-title span { display: inline-block; border-bottom: 1px solid #e0e0e0; color: #ff4a39; font-size: 16px; height: 25px; padding-top: 13px; line-height: 25px; position: relative; top: -2px; width: 210px; float: right; margin-left: -30px; }
+#game-kaifu { margin-left: 15px; }
+.game-kaifu-xykcb-title { height: 38px; padding-left: 15px; }
+.game-kaifu-xykcb-title span { display: inline-block; border-bottom: 1px solid #e0e0e0; color: #ff4a39; font-size: 16px; height: 25px; padding-top: 13px; line-height: 25px; position: relative; top: -2px; width: 210px; float: right; margin-left: -30px; }
+.kaifu-bar { border-bottom: 3px solid #ff4a39; height: 40px; position: relative; overflow: hidden; }
+.kaifu-bar li { float: left; position: relative; height: 40px; line-height: 40px; color: #ff4a39; margin-right: 5px; border: 1px solid #e0e0e0; border-bottom: 1px solid #ff4a39; padding: 0 30px; cursor: pointer; }
+.kaifu-bar li.select_li { background: #ff4a39; border: 1px solid #ff4a39; color: #fff; }
+.kaifu-list-out { border: 1px solid #e0e0e0; min-height: 500px; overflow: hidden; }
+.kaifu-go2kaice { float: right; height: 43px; line-height: 40px; padding: 0 30px; display: inline-block; background: #ff9000; position: absolute; z-index: 1; right: 0; }
+.kaifu-go2kaice a { color: #fff; }
+.game-kaifu-list-list-title { height: 38px; padding-left: 15px; }
+.game-kaifu-list-list-title span { display: inline-block; border-bottom: 1px solid #e0e0e0; color: #ff4a39; font-size: 16px; height: 25px; padding-top: 13px; line-height: 25px; position: relative; top: -2px; width: 930px; float: right; margin-left: -30px; }
+.game-kaifu-list-list-title span strong { border-bottom: 1px solid #f15443; height: 25px; display: inline-block; position: relative; z-index: 1; }
+.kaifu-list-out { border: 1px solid #e0e0e0; }
+.kaifu-list-out ul li { border-bottom: 1px solid #e0e0e0; padding: 15px; }
+.game-kaifu-list-list-left { float: left; width: 100px; height: 100px; }
+.game-kaifu-list-list-left img { width: 100px; height: 100px; border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; -webkit-border-radius: 10px; }
+.game-kaifu-list-list-center { float: left; width: 480px; margin-left: 20px; }
+.game-kaifu-list-list-right-inner { width: 420px; }
+.game-kaifu-list-list-center h3 { font-size: 18px; height: 32px; line-height: 32px; overflow: hidden; }
+.game-kaifu-list-list-center h3 a:hover { position: relative; left: 1px; top: 1px; }
+.game-kaifu-list-list-center div { height: 32px; line-height: 32px; overflow: hidden; }
+.game-kaifu-list-list-center-pt { font-size: 16px; }
+.game-kaifu-list-list-center-pt img { position: relative; display: inline-block; margin-right: 5px; top: 5px; }
+.game-kaifu-list-list-center-pt span { padding-right: 10px; padding-left: 5px; }
+.game-kaifu-list-list-time { font-size: 16px; color: #555; }
+.game-kaifu-list-list-time span { color: #ff4a39; padding: 0 2px; }
+.game-kaifu-list-list-right { float: right; width: 350px; margin-left: -50px; padding-top: 25px; }
+.game-kaifu-list-list-right a { display: inline-block; text-decoration: none; text-align: center; width: 100px; height: 42px; line-height: 42px; margin-left: 5px; font-size: 18px; border: 2px #ff4a39 solid; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px; }
+.game-kaifu-list-list-right a.apk { border: 2px #f0ad4e solid; color: #f0ad4e; }
+.game-kaifu-list-list-right a.apk:hover { background-color: #f0ad4e; color: #fff; }
+.game-kaifu-list-list-right a.ios { border: 2px #5bc0de solid; color: #5bc0de; }
+.game-kaifu-list-list-right a.ios:hover { background-color: #5bc0de; color: #fff; }
+.game-kaifu-list-list-right a.jbios { border: 2px #5cb85c solid; color: #5cb85c; }
+.game-kaifu-list-list-right a.jbios:hover { background-color: #5cb85c; color: #fff; }
+.game-kaifu-list-list-right .game-kaifu-list-lqlb a { background: #f15443 url(iyx_nry_l_ico.png)/*tpa=http://www.cgamex.com/static/images/iyx_nry_l_ico.png*/ 15px -43px no-repeat; background-size: 25px; }
+.game-kaifu-list-list-right .game-kaifu-list-lqlb a:hover { background-color: #e14938; }
+.game-kaifu-list-list-right .game-kaifu-list-xzyx a { background: #85c226 url(ilibao_down.png)/*tpa=http://www.cgamex.com/static/images/ilibao_down.png*/ 15px 7px no-repeat; background-size: 25px; }
+.game-kaifu-list-list-right .game-kaifu-list-xzyx a:hover { background-color: #6ca810; }
+.game-kaifu-list-list-right span { display: inline-block; margin-bottom: 10px; }
+.game-kaifu-list-list-right em { display: inline-block; text-align: center; margin: 0 10px; width: 140px; height: 42px; line-height: 42px; color: #fff; font-size: 18px; padding-left: 10px; border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; -webkit-border-radius: 5px; }
+.game-kaifu-list-list-right .game-kaifu-list-lqlb-no em { background: #a0a0a0 url(iyx_nry_l_ico.png)/*tpa=http://www.cgamex.com/static/images/iyx_nry_l_ico.png*/ 15px -43px no-repeat; background-size: 25px; font-style: normal; }
+span.game-kaifu-list-xzyx { margin-left: 170px; }
+#search_1, #search_2, #search_3 { display: none; }
+.kaifu-bar li.select_li a { color: #fff; }
+#game-kaifu { width: 250px; }
+#game-kaifu .title { width: 215px; }
+#game-kaifu .title strong { width: 140px; }
+#game-kaifu .txt-area { width: 135px; overflow: hidden; }
+#game-kaifu .txt-area h2 { height: 44px; line-height: 22px; overflow: hidden; width: 135px; }
+.view-more-list { padding: 20px 0; text-align: center; }
+.view-more-list a { border: 1px solid #f15443; width: 200px; height: 36px; line-height: 36px; display: inline-block; color: #f15443;
+    border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; -webkit-border-radius: 4px; }
+.view-more-list a:hover { background: #f15443; color: #fff; }
+.game-content-left-down {
+    text-align: center;
+}
+.game-content-left-down li {
+    padding-top: 10px;
+}
+.game-content-left-down a {
+    background: url("iyx_l_d_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_l_d_ico.png*/ no-repeat;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    width: 200px;
+}
+.game-content-left-down a i {
+    border-right: 1px dashed #fff;
+    display: inline-block;
+    height: 30px;
+    left: 45px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: absolute;
+    width: 1px;
+}
+.game-content-left-down a span {
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.game-content-az a {
+    background-color: #aacd06;
+    background-position: 10px 8px;
+}
+.game-content-az a:hover {
+    background-color: #98b709;
+}
+.game-content-pg a {
+    background: #444 10px -46px;
+}
+.game-content-pg a:hover {
+    background-color: #333;
+}
+.game-content-wp a {
+    background: #42c4ff 10px -98px;
+}
+.game-content-wp a:hover {
+    background-color: #36a8dc;
+}
+.outlink { margin-top: 30px; }
+.outlink table { margin: 0 auto; }
+.outlink img { padding: 0; margin: 0; }
+.outlink { margin-top: 30px; }
+.outlink table { margin: 0 auto; }
+.outlink img { padding: 0; margin: 0; }
+ul#paylist { display: block; height: auto; overflow: hidden; }
+ul#paylist li { display: block; float: left; width: 100px; height: auto; margin-left: 10px; }
+ul#paylist li img { border-radius: 10px; }
+ul#paylist li a { display: block; text-align: center; }
+.kaifu-list-out .input-sm { width: 200px; }
+.control-box { margin-top: 20px; }
+.control-box label { width: 140px; text-align: right; position: relative; top: 0px; }
+.payinput { padding-bottom: 20px; }
+.paybtn { padding-left: 140px; }
+label.pay_type, label.payto { width: auto; font-size: 12px; }
+.paycheckbox, .cardtypecheck { word-wrap: break-word; width: 490px; display: inline-block; float: left; }
+ul.pay_money_list { width: auto; height: auto; overflow: hidden; }
+ul.pay_money_list li { display: inline-table; width: 110px; float: left; height: 28px; line-height: 28px; padding: 0; border: 0; }
+.kaifu-list-out .other_money_input { width: 90px; }
+.moneylabel, .cardtypelabel { width: 140px; }
+.moneybox, .cardtypebox { display: block; float: left; padding-left: 5px; }
+#game_list ul li, #server_list ul li { border: 0; float: left; font-size: 13px; padding: 8px; }
+.modal-body { height: auto; overflow: hidden; }
+div.modal-dialog { top: 25%; }
+#pay_request p { padding: 15px; }
+#select_order ul li { padding: 5px }
+#select_order ul li label { margin-right: 5px; }
+.nav, .nav_inner ul { height: 30px; line-height: 30px; width: 100%; background-color: #F5F5F5; display: inline-table; }
+.nav_inner { height: 30px; line-height: 30px; width: 1000px; margin: 0 auto; }
+.nav_inner ul li { float: left; color: #6C6C6C; margin-right: 5px; font-size: 12px; }
+.nav a { font-weight: 600; color: #F40; }
+ul.nav_inner_right, ul.nav_inner_left { width: 49.5%; }
+ul.nav_inner_right li { display: block; float: right; }
+.securetip { position: absolute; width: 700px; z-index: 50; height: 100px; top: 30px; left: 50%; margin-left: -200px; padding: 10px; }
+.submit_reg_btn, .submit_login_btn { margin-bottom: 10px; }
+.reg_msg, .login_msg { display: none; width: 100%; padding: 8px; }
+.game-type { margin-left: 10px; }
+.nav_cc a:hover { text-decoration: none; }
+.nav_cc li { position: relative; }
+div.user { width: 489px; float: left; min-height: 200px; overflow: hidden; }
+div.user_info { width: 488px; border-right: 1px #e0e0e0 solid; padding-right: 10px; }
+div.spread_info { padding-left: 10px; }
+.user .panel-body { font-size: 12px; }
+.user .panel-body p { margin-bottom: 10px; padding: 8px; border-bottom: 1px #e0e0e0 dotted; }
+.user .panel-body p em { color: #ff0000; font-weight: 600; }
+.panel-heading a { display: inline-block; float: right; font-weight: 600; font-size: 13px; margin-top: 3px; }
+.panel-heading em { font-size: 11px; color: #ff0000; }
+ul.web_game_kf { margin-left: -20px; }
+ul.web_game_kf .mask {
+    font-size: 16px;
+    height: 235px;
+    left: 0;
+    position: absolute;
+    top: -235px;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+}
+ul.web_game_kf .pic {
+    display: block;
+    width: 100%;
+    height: 235px;
+    background: url(bg_img.jpg)/*tpa=http://www.cgamex.com/static/images/bg_img.jpg*/ center no-repeat;
+    transition: all .2s ease;
+}
+ul.web_game_kf .name {
+    line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background: #EFEFEF;
+    color: #111;
+    position: relative;
+}
+ul.web_game_kf li { width: 235px; margin: 0 0 20px 20px; height: 275px; display: block; float: left; border: 0px;
+    position: relative;
+    background: #C5424A;
+    overflow: hidden;
+    padding: 0px;
+}
+ul.web_game_kf li:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+ul.web_game_kf li:hover .name {
+    background: #09adff none repeat scroll 0 0;
+    color: #fff;
+}
+ul.web_game_kf li:hover .mask { top: 0; }
+ul.web_game_kf li:hover .pic { opacity: 0.1; transform: scale(1.2); }
+ul.web_game_kf .server_item {
+    background: rgba(0, 0, 0, 0) none no-repeat scroll 50% -10px;
+    height: 235px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+    line-height: 235px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+ul.web_game_kf .bottom {
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 15px;
+    position: absolute;
+    width: 100%;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+ul.web_game_kf .enter {
+    border: 1px solid #f6e8e9;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1;
+    padding: 5px 10px;
+}
+ul.web_game_kf a {
+    color: #fff;
+}
+ul.web_game_server_list li { font-size: 14px; display: block; float: left; width: 250px; text-align: center; height: 50px; line-height: 50px; padding: 0; border-bottom: 1px #CCCCCC dotted; transition: background-color 0.2s ease-in-out 0s; }
+ul.web_game_server_list li a { color: #00a1f1; }
+ul.web_game_server_list li:hover { background-color: #c5e9f2; }
+ul.web_game_server_list li em {
+    background: green none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 2px;
+    padding: 2px;
+}
+li.has_sub ul { color: #fff; z-index: 500; position: absolute; display: none;     width: 100px;}
+li.has_sub ul li {
+    background: #474747 none repeat scroll 0 0;
+}
+li.has_sub ul li:not(:last-child){
+    border-bottom: 1px #666 solid;
+}
+/*.new-server{position:absolute; width: 100%; height: 35px; line-height: 35px; bottom: 40px; background-color: #ccc; text-align: center; font-weight: 600; filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5; color: #ff0000;}*/
+.web_game_payrate{position: relative;width: 235px; height: 30px; background-color: #ff0000; top:0px;right: 0px; position: absolute; color:#FFFF33;font-weight: 600;font-size: 15px; text-align: center; line-height: 30px;}
+
+.detail_left,.detail_right{
+    min-height: 500px;
+    float: left;
+    height: auto;
+
+}
+.detail_title{text-align: center;padding: 0px 0 0 0;}
+.detail_title h3{ background:#ff4a39 ;color: #fff; padding: 8px 0; font-size: 18px;}
+.detail_left{width: 246px;}
+.detail_right{width: 751px;border-left: 1px #ccc solid;}
+.detail_icon{margin: 0 auto; width: 138px; margin-top: 10px;}
+.detail_icon img{width: 138px;height: 138px;}
+ul.detail_content_list{padding: 0px 5px;}
+ul.detail_content_list li{border-bottom: 1px #ccc dotted; font-size: 14px;}
+ul.detail_content_list li span{margin-right: 3px;font-weight: 600;}
+
+.detail_down{text-align: center; padding: 15px 0px;}
+.detail_down a{margin-bottom: 20px;}
+.detail_right{padding: 40px 20px;}
+.detail_right span.detail_right_title{background-color: #fff; font-size: 15px; font-weight: 600; display: inline-block; border: 1px #ff4a39 solid; margin-left: 40px; height: 40px;line-height: 40px; padding:0 7px;border-radius:5px; border-bottom: 1px #fff solid;}
+.detail_right_content{min-height: 100px; border-top: 1px #ff4a39 solid; margin-top: -2px; margin-bottom: 40px; padding: 10px;}
+.detail_right_content img{margin: 0; padding:0;}
+

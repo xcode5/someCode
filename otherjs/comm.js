@@ -69,64 +69,64 @@ var remove_login_cookie = function () {
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-    $("a.login_btn").click(function () {
-        $(".login_modal").modal({keyboard: false});
-    });
-    $("a.reg_btn").click(function () {
-        $(".reg_modal").modal({keyboard: false});
-    });
+//    $("a.login_btn").click(function () {
+//        $(".login_modal").modal({keyboard: false});
+//    });
+//    $("a.reg_btn").click(function () {
+//        $(".reg_modal").modal({keyboard: false});
+//    });
+//
+//    $(".submit_reg_btn a").click(function () {
+//        register();
+//    })
+//
+//    $(".submit_login_btn a").click(function () {
+//        login();
+//    })
+//
+//    $(".logout_btn").click(function () {
+//        $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=155&callback=?"
+//        $.getJSON($url, function (data) {
+//                console.debug(data);
+//                if (data[0].code != 1) {
+//                    reg_msg_show(data[0].message);
+//                } else {
+//                    window.location.reload();
+//                }
+//            }
+//        )
+//
+//
+//    })
 
-    $(".submit_reg_btn a").click(function () {
-        register();
-    })
 
-    $(".submit_login_btn a").click(function () {
-        login();
-    })
-
-    $(".logout_btn").click(function () {
-        $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=155&callback=?"
-        $.getJSON($url, function (data) {
-                console.debug(data);
-                if (data[0].code != 1) {
-                    reg_msg_show(data[0].message);
-                } else {
-                    window.location.reload();
-                }
-            }
-        )
-
-
-    })
-
-
-    $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=156&callback=?"
-    $.getJSON($url, function (data) {
-            //console.debug(data);
-            $('div.user_info p em.user_coin').text("正在查询...");
-            if (data[0].code != 1) {
-                $('div.user_info p em.user_coin').text(data[0].message)
-            } else {
-                $('div.user_info p em.user_coin').text(data[0].data.coin)
-            }
-        }
-    )
+//    $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=156&callback=?"
+//    $.getJSON($url, function (data) {
+//            //console.debug(data);
+//            $('div.user_info p em.user_coin').text("正在查询...");
+//            if (data[0].code != 1) {
+//                $('div.user_info p em.user_coin').text(data[0].message)
+//            } else {
+//                $('div.user_info p em.user_coin').text(data[0].data.coin)
+//            }
+//        }
+//    )
 
     if (window.location.href.indexOf('/detail.html') > -1) {
-    	var gameid = get_query_parame('gameid');
-    	if(gameid == null){
+    	gameidx = get_query_parame('gameid');
+    	if(gameidx == null){
     		reg_msg_show("暂无游戏");
     		return false;
     	}
     	
-        $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=1105&gameid=" + gameid + "&callback=?";
+        $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=1105&gameid=" + gameidx + "&callback=?";
         $.getJSON($url, function (data) {
 
             if (data[0].code != 1) {
                 reg_msg_show(data[0].message);
             } else {
                 var data = data[0].data;
-                console.log(data)
+                //console.log(data)
                 $('#classname').text(data.classname);
                 $('#introduce').html(data.introduce==""?"暂时没有福利介绍":data.introduce);
                 $('#summary').text(data.summary==""?"暂时没有游戏介绍":data.summary);
@@ -156,11 +156,11 @@ $(function () {
                   var download_url = "";
                   var selfGameInfo = Enumerable.From(gameListObj)
                   .Where(function (x) {
-                         return x.gameid == gameId;
+                         return x.gameid == gameidx;
                          })
                   .ToArray()[0];
                   if (selfGameInfo == null || selfGameInfo == undefined || selfGameInfo == "") {
-                  console.log("没有找到GAMEID=" + gameId + "的游戏");
+                  //console.log("没有找到GAMEID=" + gameId + "的游戏");
                   } else {
                   if (selfGameInfo.url_ios1 == "" && selfGameInfo.url_ios2 == "") {
                   
@@ -256,69 +256,37 @@ var get_consume_log = function () {
 
 
 var register = function () {
-    var user_name = $("#reg_username").val();
-    var pass = $("#reg_pass").val();
-    var re_pass = $("#reg_re_pass").val();
-
-    if (user_name.length < 6 || user_name.length > 20) {
-        reg_msg_show("账号不合法，长度为6-20位");
-        return;
-    }
-    if (pass.length < 6 || pass.length > 20) {
-        reg_msg_show("密码不合法，长度为6-20位");
-        return;
-    }
-    if (pass != re_pass) {
-        reg_msg_show("两次密码输入不一致");
-        return;
-    }
-    $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=152&username=" + user_name + "&password=" + pass + "&callback=?"
-    $.getJSON($url, function (data) {
-            if (data[0].code != 1) {
-                reg_msg_show(data[0].message);
-            } else {
-                reg_msg_show("注册成功")
-                $(".reg_msg").removeClass("label-danger").addClass("label-success");
-                //set_login_cookie(user_name);
-                //setInterval("window.location.reload()", 1000);
-                if (window.location.href.toLowerCase().indexOf("web_game") > 0 || window.location.href.toLowerCase().indexOf("cps") > 0) {
-                    window.location.reload();
-                } else {
-                    window.location.href = "user.html";
-                }
-            }
-        }
-    )
+   
 }
 
 var login = function () {
-    var user_name = $("#login_username").val();
-    var pass = $("#login_pass").val();
-    if (user_name.length < 6 || user_name.length > 20) {
-        login_msg_show("账号不合法，长度为6-20位");
-        return;
-    }
-    if (pass.length < 6 || pass.length > 20) {
-        login_msg_show("密码不合法，长度为6-20位");
-        return;
-    }
-    $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=153&username=" + user_name + "&password=" + pass + "&callback=?"
-    $.getJSON($url, function (data) {
-            if (data[0].code != 1) {
-                login_msg_show(data[0].message);
-            } else {
-                login_msg_show("登录成功")
-                $(".login_msg").removeClass("label-danger").addClass("label-success");
-                //set_login_cookie(user_name);
-                //setInterval("window.location.reload()", 1000);
-                if (window.location.href.toLowerCase().indexOf("web_game") > 0 || window.location.href.toLowerCase().indexOf("cps") > 0) {
-                    window.location.reload();
-                } else {
-                    window.location.href = "user.html";
-                }
-            }
-        }
-    )
+//    var user_name = $("#login_username").val();
+//    var pass = $("#login_pass").val();
+//    if (user_name.length < 6 || user_name.length > 20) {
+//        login_msg_show("账号不合法，长度为6-20位");
+//        return;
+//    }
+//    if (pass.length < 6 || pass.length > 20) {
+//        login_msg_show("密码不合法，长度为6-20位");
+//        return;
+//    }
+//    $url = serverUrl + "/index.php?r=dispatchWeb/index&cmd=153&username=" + user_name + "&password=" + pass + "&callback=?"
+//    $.getJSON($url, function (data) {
+//            if (data[0].code != 1) {
+//                login_msg_show(data[0].message);
+//            } else {
+//                login_msg_show("登录成功")
+//                $(".login_msg").removeClass("label-danger").addClass("label-success");
+//                //set_login_cookie(user_name);
+//                //setInterval("window.location.reload()", 1000);
+//                if (window.location.href.toLowerCase().indexOf("web_game") > 0 || window.location.href.toLowerCase().indexOf("cps") > 0) {
+//                    window.location.reload();
+//                } else {
+//                    window.location.href = "user.html";
+//                }
+//            }
+//        }
+//    )
 }
 
 
@@ -332,16 +300,16 @@ var get_web_game_list = function () {
 
 //进入游戏，如果没有登录弹出登录框
 var enter_game = function (gameid, serverid) {
-    var _gameInfo = get_web_game_list(gameid)[0];
-
-    if (_gameInfo) {
-        if ($.cookie(cookie_name)) {
-            var fullEnterGameUrl = serverUrl + "/index.php?r=dispatchWeb/index&cmd=1201&gameid=" + _gameInfo.game_id + "&serverid=" + serverid;
-            window.open(fullEnterGameUrl);
-        } else {
-            $(".login_modal").modal({keyboard: false});
-        }
-    }
+//    var _gameInfo = get_web_game_list(gameid)[0];
+//
+//    if (_gameInfo) {
+//        if ($.cookie(cookie_name)) {
+//            var fullEnterGameUrl = serverUrl + "/index.php?r=dispatchWeb/index&cmd=1201&gameid=" + _gameInfo.game_id + "&serverid=" + serverid;
+//            window.open(fullEnterGameUrl);
+//        } else {
+//            $(".login_modal").modal({keyboard: false});
+//        }
+//    }
 };
 
 var get_gamewebinfo_byid = function (gameid) {
@@ -384,10 +352,10 @@ var allhead = ["<!--通用头部 开始-->",
                "        <div class=\"top_menu_in\">",
                "            <div class=\"top_menu_in_l\">",
                "                <ul class=\"navlist\">",
-               "                    <li><a target=\"_blank\" href=\"index.htm\">为顺利领取手游礼包请在本站下载的app内注册<font color=\"#0000ff\">全新账号</font>,以后玩本站其他手游时均无需再次注册.<font color=\"#0000ff\">客服Q:303059970.</font></a></li>",
+               "                    <li><h3><p><a target=\"_blank\">为顺利领取礼包请在本站下载的端内注册一次<font color=\"#0000ff\">r7开头的全新账号</font>,请不要使用老账号自动登录.</p><font color=\"#0000ff\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客服Q:303059970.玩家2群574365795</font></a></h3></li>",
                "                    ",
                "                    ",
-               "                    <li><span style=\"text-decoration:underline\"><a target=\"_blank\" href=\"http://cdn2.lp.sifuba.net/100000011076/100000011076_1000_b7ac36344212d947dd0b6f79654e485e.apk\">本站APP</a></span></li>",
+               "                    <li><span style=\"text-decoration:underline\"><a target=\"_blank\" href=\"http://cdn2.lp.sifuba.net/100000011076/100000011076_1000_1ac33c1932a3240e84ac84379c7bd7de.apk\">点击下载本站客户端</a></span></li>",
                "                    ",
                "                    ",
                "                </ul>",
@@ -547,8 +515,7 @@ var allhead = ["<!--通用头部 开始-->",
                "        </div>",
                "    </div>",
                "</div>",
-               "<!--通用头部 结束-->",
-               ].join("");
+               "<!--通用头部 结束-->"].join("");
 
 
 //=============================================
@@ -604,7 +571,7 @@ var allhead_in=["<!--通用底部 开始-->",
                 "<script type=\"text/javascript\">",
                 "    $(function(){",
                 "      var selfNavFlag = $(\"#navFlag\").val();",
-                "      console.log(selfNavFlag);",
+                "       ",
                 "      ",
                 "      $(\".game_nav ul li\").each(function () {",
                 "                                if($(this).attr(\"nav_flag\")==selfNavFlag){",
@@ -637,7 +604,7 @@ var down_fun = function (gameId) {
         })
         .ToArray()[0];
     if (selfGameInfo == null || selfGameInfo == undefined || selfGameInfo == "") {
-        console.log("没有找到GAMEID=" + gameId + "的游戏");
+        //console.log("没有找到GAMEID=" + gameId + "的游戏");
     } else {
         if (selfGameInfo.url_ios1 == "" && selfGameInfo.url_ios2 == "") {
             window.open(selfGameInfo.url_apk);
@@ -677,7 +644,7 @@ var select_game_by_type = function (type) {
             count++;
         }
     })
-    console.log(count)
+    //console.log(count)
     var liId = '#type' + type;
     $('div.game-cate-select-inner ul li').removeClass('current');
     $(liId).addClass('current');

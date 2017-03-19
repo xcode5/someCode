@@ -1,0 +1,2992 @@
+
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p, img, strong, span, cite {
+    border: 0 none;
+    font-family: microsoft yahei;
+    margin: 0; 
+    padding: 0;
+}
+body {
+    color: #333;
+    font-size: 16px;
+}
+ul, li {
+    list-style: outside none none;
+}
+table {
+    border-collapse: collapse;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #d70404;
+    position: relative;
+}
+.clear {
+    clear: both;
+    height: 0;
+    margin-top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt1 {
+    margin-top: 5px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt25 {
+    margin-top: 25px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+form, input, button {
+    outline: medium none;
+}
+.pt20 {
+    padding-top: 15px;
+}
+.game_top {
+    height: 100px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.game_nav {
+    background: #333 none repeat scroll 0 0;
+    height: 70px;
+    width: 100%;
+
+}
+.game_nav_inner {
+    padding-left: 175px;
+    background-image: url("new_logo.png")/*tpa=http://www.cgamex.com/static/images/new_logo.png*/;
+    background-repeat: no-repeat;
+    background-position: 9px 3px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.game_nav_inner ul {
+    float: left;
+}
+.game_nav_inner ul li {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 140px;
+}
+.game_nav_inner ul li a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    transition:.3s;
+}
+.game_nav_inner ul li.yx_cur>a {
+    color:#ff7800;
+}
+
+.game_nav_inner ul li a:hover {
+    /*background: #ff4a39 none repeat scroll 0 0;*/
+    color:#ff7800;
+    text-decoration: none;
+
+}
+.game_top_logo {
+    padding-top: 15px;
+}
+.game_content_out {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    position: relative;
+    width: 1000px;
+}
+.game-cate-select {
+    border: 1px solid #e0e0e0;
+}
+.game-cate-select-inner {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 978px;
+}
+.game-cate-select-inner ul {
+    float: left;
+    margin-right: -50px;
+    width: 880px;
+}
+.game-cate-select div.last {
+    border-bottom: 0 none;
+}
+.game-cate-select-inner h3 {
+    float: left;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: right;
+    width: 80px;
+}
+.game-cate-select-inner ul li {
+    float: left;
+    line-height: 23px;
+    margin-bottom: 3px;
+    margin-right: 8px;
+}
+.game-cate-select-inner ul li a {
+    display: block;
+    font-size: 14px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 5px;
+}
+.game-cate-select-inner ul li.current a {
+    background-color: #ff4a39;
+    border-radius: 3px;
+    color: #fff;
+}
+.game-cate-select-inner ul.game-cate-select-platform li {
+    margin-right: 30px;
+}
+.game-cate-select-platform li a span {
+    background-image: url("iyx_icons.png")/*tpa=http://www.cgamex.com/static/images/iyx_icons.png*/;
+    background-repeat: no-repeat;
+    display: block;
+    height: 26px;
+    position: relative;
+    text-indent: -9999px;
+    width: 27px;
+}
+.game-cate-select-platform li a.game-ico-android span {
+    background-position: 0 0;
+}
+.game-cate-select-platform li a.game-ico-android:hover span {
+    background-position: 0 -27px;
+}
+.game-cate-select-platform li.current a.game-ico-android span {
+    background-position: 0 -27px;
+}
+.game-cate-select-platform li.current a.game-ico-android {
+    background-color: #fff;
+}
+.game-cate-select-platform li a:hover {
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+.game-cate-select-platform li a.game-ico-ios span {
+    background-position: -33px 0;
+}
+.game-cate-select-platform li a.game-ico-ios:hover span {
+    background-position: -33px -28px;
+}
+.game-cate-select-platform li.current a.game-ico-ios span {
+    background-position: -33px -28px;
+}
+.game-cate-select-platform li.current a.game-ico-ios {
+    background-color: #fff;
+}
+.game-cate-select-platform li a.game-ico-wp span {
+    background-position: -67px 0;
+}
+.game-cate-select-platform li a.game-ico-wp:hover span {
+    background-position: -67px -28px;
+}
+.game-cate-select-platform li.current a.game-ico-wp span {
+    background-position: -67px -28px;
+}
+.game-cate-select-platform li.current a.game-ico-wp {
+    background-color: #fff;
+}
+.game-list-title {
+    height: 46px;
+}
+.game-list-title-in {
+    background: rgba(0, 0, 0, 0) url("iyx_icons.png")/*tpa=http://www.cgamex.com/static/images/iyx_icons.png*/ no-repeat scroll 0 -78px;
+    height: 80px;
+    margin-bottom: -34px;
+    margin-left: -37px;
+    position: relative;
+    width: 181px;
+}
+.game-list-title-in h3 {
+    color: #fff;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    margin: 0 auto;
+    text-align: center;
+}
+.game-total {
+    float: right;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.game-total span {
+    color: #ff4a39;
+    font-size: 18px;
+}
+.game-nodata {
+    height: 20px;
+    line-height: 20px;
+    padding: 30px 0;
+    text-align: center;
+}
+.pagelist {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+.pagelist span {
+    display: inline-block;
+    margin: 0 1px;
+}
+.pagelist a {
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 4px 10px;
+}
+.pagelist a:hover {
+    background: #ff4a39 none repeat scroll 0 0;
+    border: 1px solid #ca7b72;
+    color: #fff;
+}
+.pagelist a.now {
+    background: #ff4a39 none repeat scroll 0 0;
+    border: 1px solid #ca7b72;
+    color: #fff;
+}
+.game-list-ul {
+    border: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+.game-list-ul-list {
+    width: 1000px;
+    min-height: 600px;
+}
+.game-list-ul-list li {
+    border-bottom: 1px dashed #ccc;
+    float: left;
+    height: 130px;
+    margin-left: 25px;
+    padding: 20px 0;
+    width: 460px;
+}
+.game-list-cate-android {
+    background: rgba(0, 0, 0, 0) url("android_ico-1.png")/*tpa=http://www.cgamex.com/images/android_ico.png*/ no-repeat scroll 0 0;
+    display: inline-block;
+    height: 21px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    width: 22px;
+}
+.game-list-cate-ios {
+    background: rgba(0, 0, 0, 0) url("apple_ico-1.png")/*tpa=http://www.cgamex.com/images/apple_ico.png*/ no-repeat scroll 0 0;
+    display: inline-block;
+    height: 21px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    width: 21px;
+}
+.game-list-cate-wp {
+    background: rgba(0, 0, 0, 0) url("wp_ico.png")/*tpa=http://www.cgamex.com/images/wp_ico.png*/ no-repeat scroll 0 0;
+    display: inline-block;
+    height: 21px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    width: 21px;
+}
+.game-list-ul-list-left {
+    float: left;
+    width: 100px;
+}
+.game-list-ul-list-center {
+    float: left;
+    margin-left: 20px;
+    width: 320px;
+}
+.game-list-ul-list-right {
+    float: right;
+    font-size: 13px;
+}
+.game-list-ul-list-left img {
+    border-radius: 15px;
+    height: 100px;
+    width: 100px;
+}
+.game-list-ul-list-left a:hover {
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+.game-list-ul-list-center py {
+    color: #000;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.game-list-ul-list-center h3 {
+    font-size: 24px;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.game-list-ul-list-center h3 a:hover {
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+.game-list-ul-list-right-score {
+    line-height: 25px;
+    /*padding-top: 25px;*/
+    text-align: center;
+}
+.game-list-ul-list-right-score span {
+    /*background: rgba(0, 0, 0, 0) url("/static/images/iyx_icons.png") no-repeat scroll -110px 4px;*/
+    color: #ff4a39;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 0px;
+}
+.game-list-ul-list-right-down a{
+    margin-bottom: 10px;
+}
+.game-list-ul-list-right-down a {
+    background: #ff4a39 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 8px;
+    text-align: center;
+    width: 100px;
+}
+.game-list-ul-list-right-down a:hover {
+    background: #e13c2c none repeat scroll 0 0;
+}
+.game-list-ul-list-center p{font-size: 14px;}
+.game-list-ul-list-center-cate span{
+    font-size: 14px;
+}
+.pay_rate{font-weight: 600;color: #e13c2c;}
+.game-list-ul-list-center-cate img {
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+}
+.game-list-ul-list-center-cate span {
+    padding-left: 8px;
+}
+.game-content-left {
+    float: left;
+    min-height: 900px;
+    position: relative;
+    width: 288px;
+}
+.game-content-left-inner {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ff4a39 #e0e0e0 #e0e0e0;
+    border-image: none;
+    border-style: solid;
+    border-width: 3px 1px 1px;
+    width: 288px;
+}
+.game-content-right {
+    float: right;
+    margin-left: -50px;
+    width: 711px;
+}
+.game_linkpath {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 1000px;
+}
+.game_linkpath span {
+    background: rgba(0, 0, 0, 0) url("iyx_home.png")/*tpa=http://www.cgamex.com/static/images/iyx_home.png*/ no-repeat scroll left center;
+    padding-left: 18px;
+}
+.game_linkpath a {
+    color: #ff4a39;
+}
+.game-content-right-list {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ff4a39 #e0e0e0 #e0e0e0;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    min-height: 1100px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.game-content-right-bar {
+    height: 36px;
+    position: relative;
+    z-index: 0;
+}
+.game-content-right-bar ul {
+}
+.game-content-right-bar ul li {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #e0e0e0 #e0e0e0 #ff4a39;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 5px;
+    position: relative;
+}
+.game-content-right-bar ul li a {
+    color: #ff4a39;
+    display: block;
+    padding: 0 15px;
+}
+.game-content-right-bar ul li:hover {
+    background: #ff4a39 none repeat scroll 0 0;
+    border: 1px solid #ff4a39;
+    color: #fff;
+}
+.game-content-right-bar ul li:hover a {
+    color: #fff;
+}
+.game-content-right-artlist {
+    padding-bottom: 20px;
+}
+.game-content-right-artlist ul {
+    border-top: 1px dashed #ebebeb;
+}
+.game-content-right-artlist ul li {
+    background: rgba(0, 0, 0, 0) url("dot3.png")/*tpa=http://www.cgamex.com/static/images/dot3.png*/ no-repeat scroll left center;
+    border-bottom: 1px dashed #ebebeb;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.game-content-right-artlist ul li span {
+    color: #aaa;
+    float: right;
+}
+.game-content-com-title {
+    clear: both;
+    height: 40px;
+    padding: 10px 0;
+}
+.game-content-com-title h3 {
+    background-color: #fff;
+    background-image: url("iyx_c_icos.png")/*tpa=http://www.cgamex.com/static/images/iyx_c_icos.png*/;
+    background-repeat: no-repeat;
+    border: 1px solid #ff4a39;
+    border-radius: 4px;
+    color: #ff4a39;
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px 0 35px;
+    position: relative;
+}
+.game-content-com-title h3 span {
+    background: rgba(0, 0, 0, 0) url("sjx_1.png")/*tpa=http://www.cgamex.com/static/images/sjx_1.png*/ no-repeat scroll 0 0;
+    display: block;
+    height: 7px;
+    left: 70px;
+    position: absolute;
+    top: 30px;
+    width: 15px;
+}
+.game-content-com-title-yxjj {
+    background-position: 5px 8px;
+}
+.game-content-com-title-yxjt {
+    background-position: 5px -33px;
+}
+.game-content-com-title-yxgl {
+    background-position: 5px -75px;
+}
+.game-content-com-title-yxzx {
+    background-position: 5px -117px;
+}
+.game-content-com-title-rmtj {
+    background-position: 5px -157px;
+}
+.game-content-more {
+    float: right;
+    padding-top: 10px;
+}
+.game-content-more a {
+    color: #ff4a39;
+}
+.game-big-qrcode {
+    cursor: pointer;
+    height: 90px;
+    position: relative;
+    width: 100px;
+}
+.game-big-qrcode-cover {
+    border-right: 80px solid transparent;
+    border-top: 80px solid #ff7c70;
+    height: 0;
+    width: 0;
+}
+.show-game-big-qrcode {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e0e0e0;
+    display: none;
+    height: 200px;
+    left: -1px;
+    margin-bottom: -250px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 268px;
+    z-index: 1;
+}
+.game-content-left-title {
+    font-size: 18px;
+    line-height: 25px;
+    margin: -50px auto 0;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 200px;
+}
+.game-content-left-thumb {
+    text-align: center;
+}
+.game-content-left-thumb img {
+    border-radius: 16px;
+    height: 160px;
+    width: 160px;
+}
+.game-content-left-go2zq {
+    padding-top: 10px;
+    text-align: center;
+}
+.game-content-left-go2zq a {
+    background: #65c9ff url("iyx_nry_l_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_nry_l_ico.png*/ no-repeat scroll 15px 7px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 25px 0 55px;
+}
+.game-content-left-go2zq a:hover {
+    background-color: #33a4e1;
+}
+.game-content-left-lqlb {
+    padding-top: 10px;
+    text-align: center;
+}
+.game-content-left-lqlb a {
+    background: #0bd1c0 url("iyx_nry_l_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_nry_l_ico.png*/ no-repeat scroll 15px -46px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 38px;
+    line-height: 36px;
+    padding: 0 25px 0 55px;
+}
+.game-content-left-lqlb a:hover {
+    background-color: #09baab;
+}
+.game-list-title-1 {
+    border-top: 1px solid #e0e0e0;
+}
+.game-list-title-in-1 {
+    background: rgba(0, 0, 0, 0) url("iyx_icons.png")/*tpa=http://www.cgamex.com/static/images/iyx_icons.png*/ no-repeat scroll 0 -78px;
+    height: 80px;
+    margin-bottom: -34px;
+    margin-left: -39px;
+    position: relative;
+    width: 181px;
+}
+.game-list-title-in-1 h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    height: 46px;
+    line-height: 46px;
+    margin: 0 auto;
+    text-align: center;
+}
+.game-content-left-down {
+    padding: 20px;
+}
+.game-content-gameinfo {
+    border-top: 1px dashed #e0e0e0;
+    padding: 20px;
+}
+.game-content-gameinfo ul {
+}
+.game-content-gameinfo ul li {
+    color: #666;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.game-content-left-pingce {
+    color: #666;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px;
+}
+.game-content-left-pingce a {
+    color: #e22513;
+    display: inline-block;
+    margin-left: 5px;
+}
+.game-content-left-pingce-rank {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+.game-content-left-pingce-rank span {
+    background: rgba(0, 0, 0, 0) url("iyx_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: inline-block;
+    font-family: impact;
+    font-size: 36px;
+    height: 92px;
+    line-height: 76px;
+    text-align: center;
+    width: 93px;
+}
+.game-content-left-site {
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+.game-content-left-site a {
+    background: #65c9ff none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    width: 140px;
+}
+.game-content-left-site a:hover {
+    background: #4ba6d8 none repeat scroll 0 0;
+}
+.game-content-right-inner {
+}
+.game-content-right-introduce {
+    color: #666;
+    font-size: 16px;
+    height: 104px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.inkPhoBox {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 680px;
+}
+.inkPhoBox .mod18 {
+    position: relative;
+    width: 680px;
+}
+.inkPhoBox #prev {
+    background: #aaa none repeat scroll 0 0;
+    border-radius: 23px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "宋体";
+    font-size: 25px;
+    height: 46px;
+    left: 11px;
+    line-height: 46px;
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    width: 46px;
+    z-index: 99;
+}
+.inkPhoBox #next {
+    background: #aaa none repeat scroll 0 0;
+    border-radius: 23px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "宋体";
+    font-size: 25px;
+    height: 46px;
+    line-height: 46px;
+    position: absolute;
+    right: 11px;
+    text-align: center;
+    top: 130px;
+    width: 46px;
+    z-index: 99;
+}
+.inkPhoBox a#prev:hover, .inkPhoBox a#next:hover {
+    background: #f15d4d none repeat scroll 0 0;
+}
+.inkPhoBox .mod18 #prevTop {
+    display: none;
+}
+.inkPhoBox .mod18 #nextTop {
+    display: none;
+}
+.inkPhoBox .mod18 li {
+    float: left;
+}
+.inkPhoBox .mod18 .cf {
+    margin: 0 auto;
+    width: 480px;
+}
+.inkPhoBox .mod18 .cf li {
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    width: 480px;
+}
+.inkPhoBox .mod18 .cf a {
+    color: #fff;
+    display: block;
+    height: 377px;
+    position: absolute;
+    width: 526px;
+}
+.inkPhoBox .mod18 .cf li span {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    bottom: 0;
+    display: block;
+    left: 0;
+    line-height: 22px;
+    padding: 10px 20px;
+    position: absolute;
+    text-align: left;
+    width: 688px;
+}
+.inkPhoBox .bigImgBox {
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+}
+.inkPhoBox .mod18 .picBox {
+    height: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+}
+.inkPhoBox .mod18 .picBox ul {
+    height: 320px;
+    left: 0;
+    position: absolute;
+}
+.inkPhoBox .mod18 .picBox li {
+    height: 320px;
+    text-align: center;
+    width: 480px;
+}
+.inkPhoBox .mod18 .picBox li img {
+    max-height: 320px;
+    max-width: 480px;
+}
+.inkPhoBox .smImgBox {
+    border: 1px solid #e1e1e1;
+    height: 64px;
+    margin: 12px auto;
+    padding: 11px;
+    position: relative;
+    width: 480px;
+}
+.inkPhoBox .mod18 .listBox {
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+}
+.inkPhoBox .mod18 .listBox .on img {
+    border: 2px solid #b42222;
+    height: 54px;
+    width: 78px;
+}
+.inkPhoBox .mod18 .listBox .on {
+}
+.inkPhoBox .left_top {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    font-family: Arial;
+    font-size: 32px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.thumblist {
+    text-align: center;
+    width: 480px;
+}
+.thumblist span {
+    display: inline-block;
+    width: 86px;
+}
+.thumblist span img {
+    border: 2px solid #fff;
+    display: inline-block;
+    height: 54px;
+    width: 78px;
+}
+.case_box_recom {
+    height: 135px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 700px;
+}
+.case_box_recom .prev {
+    display: none;
+}
+.case_box_recom .next {
+    display: none;
+}
+.case_box_recom ul {
+    height: 125px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+.case_box_recom ul li {
+    float: left;
+    height: 105px;
+    width: 700px;
+}
+.case_box_recom ul li dl.case_info {
+    color: #616741;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0;
+    overflow: hidden;
+    width: 695px;
+}
+.case_box_recom ul li dl.case_info dd {
+}
+.case_box_recom ul li dl.case_info dd {
+    display: inline-block;
+    float: left;
+    margin-left: 14px;
+    text-align: center;
+    width: 80px;
+}
+.case_box_recom ul li dl.case_info dd img {
+    border-radius: 8px;
+    height: 80px;
+    width: 80px;
+}
+.case_box_recom ul li dl.case_info dd span {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.case_box_recom ol {
+    bottom: 0;
+    height: 8px;
+    left: 50%;
+    margin: 0 0 0 -65px;
+    position: absolute;
+    z-index: 99;
+}
+.case_box_recom ol li {
+    background: #999 none repeat scroll 0 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 8px;
+    line-height: 999em;
+    margin: 0 4px;
+    overflow: hidden;
+    width: 8px;
+}
+.case_box_recom ol li.active {
+    background: #ff4a39 none repeat scroll 0 0;
+}
+.game-content-left-down {
+    text-align: center;
+}
+.game-content-left-down li {
+    padding-top: 10px;
+}
+.game-content-left-down a {
+    background-image: url("iyx_l_d_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_l_d_ico.png*/;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    width: 200px;
+}
+.game-content-left-down a i {
+    border-right: 1px dashed #fff;
+    display: inline-block;
+    height: 30px;
+    left: 45px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: absolute;
+    width: 1px;
+}
+.game-content-left-down a span {
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.game-content-az a {
+    background-color: #aacd06;
+    background-position: 10px 8px;
+}
+.game-content-az a:hover {
+    background-color: #98b709;
+}
+.game-content-pg a {
+    background-color: #444;
+    background-position: 10px -46px;
+}
+.game-content-pg a:hover {
+    background-color: #333;
+}
+.game-content-wp a {
+    background-color: #42c4ff;
+    background-position: 10px -98px;
+}
+.game-content-wp a:hover {
+    background-color: #36a8dc;
+}
+.game-content-left-down button {
+    background-image: url("iyx_l_d_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_l_d_ico.png*/;
+    background-repeat: no-repeat;
+    border: 0 none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    width: 200px;
+}
+.game-content-left-down button i {
+    border-right: 1px dashed #fff;
+    display: inline-block;
+    height: 30px;
+    left: 45px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: absolute;
+    width: 1px;
+}
+.game-content-left-down button span {
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.game-content-az button {
+    background-color: #aacd06;
+    background-position: 10px 8px;
+}
+.game-content-az button:hover {
+    background-color: #98b709;
+}
+.game-content-pg button {
+    background-color: #444;
+    background-position: 10px -46px;
+}
+.game-content-pg button:hover {
+    background-color: #333;
+}
+.game-content-wp button {
+    background-color: #42c4ff;
+    background-position: 10px -98px;
+}
+.game-content-wp button:hover {
+    background-color: #36a8dc;
+}
+.mod-box-3 {
+    overflow: hidden;
+    padding: 0;
+    width: 270px;
+}
+.mod-box-3 .hd {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.mod-box-3 .hd h2 {
+    color: #000;
+    font-size: 14px;
+}
+.mod-box-3 .hd span a {
+    color: #333;
+    font-family: "宋体";
+    font-size: 12px;
+    line-height: 25px;
+    padding-right: 10px;
+}
+.mod-box-3 .bd {
+}
+.rank-tab {
+    float: right;
+    padding: 0 5px 0 0;
+}
+.rank-tab li {
+    float: left;
+    margin-right: 3px;
+}
+.rank-tab li a {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    width: 58px;
+}
+.rank-tab li a.current {
+    background-position: -200px -500px;
+}
+.pr-list {
+    padding: 0;
+}
+.pr-list li {
+    border-bottom: 1px solid #ebebeb;
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    padding: 2px 0;
+    vertical-align: bottom;
+}
+.pr-list li a {
+    color: #333;
+}
+.pr-list li em {
+    background: #e0e0e0 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #686868;
+    display: inline;
+    float: left;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+    font-style: normal;
+    height: 36px;
+    line-height: 36px;
+    margin: 6px 15px 0 0;
+    text-align: center;
+    width: 22px;
+}
+.pr-list li em.up {
+    background: #f15d4d none repeat scroll 0 0;
+    color: #fff;
+}
+/*
+.pr-list li .img-area {
+    display: none;
+}*/
+.pr-list li .img-area img{width: 35px;height: 35px;}
+.pr-list li .txt-area {
+    display: none;
+}
+.pr-list li .title {
+    float: right;
+    height: 35px;
+    margin-left: -50px;
+    overflow: hidden;
+    width: 240px;
+}
+.pr-list li .title a {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+.pr-list li .title strong {
+    display: inline-block;
+    font-weight: 400;
+    height: 49px;
+    line-height: 49px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+.pr-list li .title span {
+    color: #999;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.ph_text h3 {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+.ph_text h3 a {
+    font-size: 14px;
+}
+.pr-list li.top {
+    height: 80px;
+    overflow: hidden;
+    padding: 7px 0 5px;
+}
+.pr-list li.top em {
+    height: 70px;
+    line-height: 70px;
+    margin: 4px 15px 0 0;
+    transition: none 0s ease 0s ;
+}
+.pr-list li.top .img-area {
+    display: inline;
+    float: left;
+    height: 70px;
+    margin: 3px 15px 0 0;
+    position: relative;
+    width: 70px;
+}
+.pr-list li.top .img-area a {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 70px;
+}
+.pr-list li.top .img-area a img {
+    border-radius: 10px;
+    display: block;
+    height: 70px;
+    width: 70px;
+}
+.pr-list li.top .img-area a .cover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 70px;
+}
+.pr-list li.top .txt-area {
+    color: #938e33;
+    display: inline;
+    float: left;
+    height: 90px;
+    line-height: 20px;
+    margin-right: -20px;
+    overflow: hidden;
+    width: 140px;
+}
+.pr-list li.top .txt-area h2 {
+    height: 44px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    width: 140px;
+}
+.pr-list li.top .txt-area h2 a {
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+}
+.pr-list li.top .txt-area h2 a:hover {
+    color: #f15d4d;
+}
+.pr-list li.top .txt-area p {
+    color: #999;
+    display: block;
+    overflow: hidden;
+    padding-top: 5px;
+}
+.pr-list li.top .txt-area p a {
+    background: #d70404 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 100px;
+}
+.pr-list li.top .txt-area p a:hover {
+    background: #f32a2a none repeat scroll 0 0;
+}
+.pr-list li.top .txt-area .download-btn {
+    margin: 3px 0 0;
+}
+.pr-list li.top .txt-area .download-btn a {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    width: 61px;
+}
+.pr-list li.top .txt-area .download-btn a:hover {
+    background-position: -150px -100px;
+}
+.pr-list li.top .title {
+    display: none;
+}
+.pr-list li.top em.up {
+}
+.libao_box {
+    color: #333;
+}
+.libao_name {
+    color: #666;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.libao_sy {
+    color: #666;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.libao_sy span {
+    color: #f15d4d;
+}
+#show {
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+#show a {
+    display: inline;
+    float: left;
+}
+#show .img {
+    height: 320px;
+    overflow: hidden;
+    position: absolute;
+    width: 960px;
+}
+#show .img SPAN {
+    display: block;
+    position: absolute;
+    width: 19999px;
+}
+#show .btns {
+    position: absolute;
+    width: 960px;
+    z-index: 10;
+}
+#show .btns B {
+    display: block;
+    height: 14px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 295px;
+    width: 100px;
+}
+#show .btns B I {
+    background: #414140 none repeat scroll 0 0;
+    border: 2px solid #414140;
+    border-radius: 7px;
+    cursor: pointer;
+    float: left;
+    font-size: 0;
+    height: 10px;
+    margin-right: 6px;
+    overflow: hidden;
+    width: 10px;
+}
+#show .btns B I:hover {
+    background: #a7a7a6 none repeat scroll 0 0;
+}
+#show .btns B I.on {
+    background: #3cd2f1 none repeat scroll 0 0;
+    cursor: default;
+}
+#show .btns B I.on:hover {
+    background: #3cd2f1 none repeat scroll 0 0;
+    cursor: default;
+}
+#show .btns S {
+    cursor: pointer;
+    display: none;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: 130px;
+    width: 60px;
+}
+#show .btns S I {
+    background: rgba(0, 0, 0, 0) url("btn_show.png")/*tpa=http://www.cgamex.com/static/images/btn_show.png*/ repeat scroll 0 0;
+    height: 160px;
+    position: absolute;
+    width: 60px;
+}
+#show .btns S.prev {
+    left: 0;
+}
+#show .btns S.prev I {
+    top: -80px;
+}
+#show .btns S.next {
+    right: 0;
+}
+#show.show-hover .btns S {
+    display: block;
+}
+.masks {
+    background: #000 none repeat scroll 0 0;
+    height: 320px;
+    opacity: 0.6;
+    overflow: hidden;
+    position: absolute;
+}
+.game-index-cate-search {
+    border: 1px solid #e0e0e0;
+}
+.game-index-cate-left {
+    float: left;
+    padding: 10px 10px 0;
+}
+.game-index-cate-left h3 {
+    background: #ff4a39 none repeat scroll 0 0;
+    border: 1px solid #ff4a39;
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 10px;
+    text-align: center;
+    width: 100px;
+}
+.game-index-cate-left h3 a {
+    color: #fff;
+    display: block;
+}
+.game-index-cate-left h3 a:hover {
+    background: #f46254 none repeat scroll 0 0;
+}
+.game-index-cate-left ul {
+    float: left;
+    margin-right: -50px;
+    width: 895px;
+}
+.game-index-cate-left ul li {
+    float: left;
+}
+.game-index-cate-left ul li {
+    height: 40px;
+    margin-left: 10px;
+    width: 75px;
+}
+.game-index-cate-left ul li a {
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.game-index-cate-left ul li a:hover {
+    color: #fff;
+}
+.game-index-cate-left ul li.cate-color-1 a {
+    border: 1px solid #3baeda;
+}
+.game-index-cate-left ul li.cate-color-2 a {
+    border: 1px solid #f6bb43;
+}
+.game-index-cate-left ul li.cate-color-3 a {
+    border: 1px solid #ff6d6d;
+}
+.game-index-cate-left ul li.cate-color-4 a {
+    border: 1px solid #d870ad;
+}
+.game-index-cate-left ul li.cate-color-5 a {
+    border: 1px solid #37bd9c;
+}
+.game-index-cate-left ul li.cate-color-6 a {
+    border: 1px solid #434a54;
+}
+.game-index-cate-left ul li.cate-color-7 a {
+    border: 1px solid #967bdc;
+}
+.game-index-cate-left ul li.cate-color-8 a {
+    border: 1px solid #967bdc;
+}
+.game-index-cate-left ul li.cate-color-9 a {
+    border: 1px solid #434a54;
+}
+.game-index-cate-left ul li.cate-color-10 a {
+    border: 1px solid #37bd9c;
+}
+.game-index-cate-left ul li.cate-color-11 a {
+    border: 1px solid #f6bb43;
+}
+.game-index-cate-left ul li.cate-color-12 a {
+    border: 1px solid #ff6d6d;
+}
+.game-index-cate-left ul li.cate-color-13 a {
+    border: 1px solid #d870ad;
+}
+.game-index-cate-left ul li.cate-color-14 a {
+    border: 1px solid #3baeda;
+}
+.game-index-cate-left ul li.cate-color-15 a {
+    border: 1px solid #3baeda;
+}
+.game-index-cate-left ul li.cate-color-16 a {
+    border: 1px solid #f6bb43;
+}
+.game-index-cate-left ul li.cate-color-17 a {
+    border: 1px solid #ff6d6d;
+}
+.game-index-cate-left ul li.cate-color-18 a {
+    border: 1px solid #d870ad;
+}
+.game-index-cate-left ul li.cate-color-19 a {
+    border: 1px solid #37bd9c;
+}
+.game-index-cate-left ul li.cate-color-20 a {
+    border: 1px solid #434a54;
+}
+.game-index-cate-left ul li.cate-color-1 a:hover {
+    background: #3baeda none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-2 a:hover {
+    background: #f6bb43 none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-3 a:hover {
+    background: #ff6d6d none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-4 a:hover {
+    background: #d870ad none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-5 a:hover {
+    background: #37bd9c none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-6 a:hover {
+    background: #434a54 none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-7 a:hover {
+    background: #967bdc none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-8 a:hover {
+    background: #967bdc none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-9 a:hover {
+    background: #434a54 none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-10 a:hover {
+    background: #37bd9c none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-11 a:hover {
+    background: #f6bb43 none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-12 a:hover {
+    background: #ff6d6d none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-13 a:hover {
+    background: #d870ad none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-14 a:hover {
+    background: #3baeda none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-15 a:hover {
+    background: #3baeda none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-16 a:hover {
+    background: #f6bb43 none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-17 a:hover {
+    background: #ff6d6d none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-18 a:hover {
+    background: #d870ad none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-19 a:hover {
+    background: #37bd9c none repeat scroll 0 0;
+}
+.game-index-cate-left ul li.cate-color-20 a:hover {
+    background: #434a54 none repeat scroll 0 0;
+}
+.game-index-cate-right {
+    float: right;
+    margin-left: -50px;
+    padding: 10px;
+    width: 255px;
+}
+.game-index-keywords {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 8px;
+}
+.game-index-keywords strong {
+    color: #ff4a39;
+}
+.game-index-keywords a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.game-index-keywords a:hover {
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+.game-index-search {
+}
+.game-index-search input {
+    border: 1px solid #ff4a39;
+    height: 20px;
+    padding: 0 5px;
+}
+.game-index-search button {
+    background: #ff4a39 none repeat scroll 0 0;
+    border: 1px solid #ff4a39;
+    color: #fff;
+    cursor: pointer;
+    height: 22px;
+}
+.game-index-search button:hover {
+    background: #e93928 none repeat scroll 0 0;
+}
+.game-index-col-2 {
+}
+.game-index-col-2-left {
+    float: left;
+    overflow: hidden;
+    width: 700px;
+}
+.game-index-col-2-right {
+    float: right;
+    overflow: hidden;
+    width: 280px;
+}
+.game-index-title-rmfl {
+    background: rgba(0, 0, 0, 0) url("iyx_tjyx.png")/*tpa=http://www.cgamex.com/static/images/iyx_tjyx.png*/ no-repeat scroll center 15px;
+    color: #ff4a39;
+    font-size: 14px;
+    height: 43px;
+    padding-right: 10px;
+    text-align: center;
+    width: 658px;
+}
+.game-index-title-rmfl h3 {
+    color: #ff4a39;
+}
+.game-index-more-rmfl {
+    margin-top: -10px;
+    text-align: right;
+}
+.game-index-more-rmfl a {
+    color: #ff4a39;
+}
+.game-index-rmfl-list {
+    padding-top: 15px;
+    width: 730px;
+}
+.game-index-rmfl-list li {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    float: left;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 10px;
+    width: 206px;
+}
+.game-index-rmfl-left {
+    float: left;
+    width: 80px;
+}
+.game-index-rmfl-left a:hover {
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+.game-index-rmfl-left img {
+    border-radius: 15px;
+    height: 80px;
+    width: 80px;
+}
+.game-index-rmfl-right {
+    float: right;
+    font-size: 14px;
+    height: 80px;
+    margin-left: -20px;
+    overflow: hidden;
+    width: 112px;
+}
+.game-index-rmfl-right h3 {
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+}
+.game-index-rmfl-right h3 a {
+    color: #ff4a39;
+}
+.game-index-rmfl-right h3 a:hover {
+    left: 1px;
+    position: relative;
+    top: 1px;
+}
+.game-index-rmfl-cate {
+    color: #666;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+.game-index-rmfl-down {
+    height: 30px;
+    overflow: hidden;
+}
+.game-index-rmfl-down a {
+    border: 1px solid #ff4a39;
+    border-radius: 4px;
+    color: #ff4a39;
+    display: inline-block;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    width: 80px;
+}
+.game-index-rmfl-down a:hover {
+    background: #ff4a39 none repeat scroll 0 0;
+    color: #fff;
+}
+.game-index-rmfl-list li:hover {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
+.game-index-zqtj {
+    border: 1px solid #e0e0e0;
+    height: 858px;
+}
+.game-index-zqtj ul {
+}
+.game-index-zqtj ul li {
+    cursor: pointer;
+    height: 150px;
+    margin: 10px auto 0;
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+}
+.game-index-zqtj ul li .game-index-zqtj-info {
+    height: 150px;
+    margin-top: -50px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.game-index-zqtj-cover {
+    background: #000 none repeat scroll 0 0;
+    height: 150px;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+.game-index-zqtj-inner {
+    position: relative;
+    z-index: 1;
+}
+.game-index-zqtj-title, .game-index-zqtj-go2zq, .game-index-zqtj-lbxz {
+    color: #fff;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 230px;
+}
+.game-index-zqtj-title {
+    line-height: 50px;
+}
+.game-index-zqtj ul li img {
+    height: 150px;
+    width: 250px;
+}
+.game-index-zqtj ul li:hover {
+}
+.game-index-zqtj ul li:hover .game-index-zqtj-info {
+    margin-top: -150px;
+}
+.game-index-zqtj-img {
+    height: 150px;
+    overflow: hidden;
+}
+.game-index-zqtj-go2zq a {
+    background: #65c9ff none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+}
+.game-index-zqtj-go2zq a:hover {
+    background: #44aee7 none repeat scroll 0 0;
+}
+.game-index-zqtj-lbxz a {
+    background: #f15d4d none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+}
+.game-index-zqtj-lbxz a:hover {
+    background: #dd4c3d none repeat scroll 0 0;
+}
+#scrollbox {
+    float: left;
+    overflow: hidden;
+    width: 980px;
+}
+#scrollbox ul {
+    overflow: hidden;
+    width: 1200px;
+}
+#scrollbox ul li {
+    float: left;
+    font-size: 14px;
+    height: 148px;
+    margin-right: 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 176px;
+}
+#scrollbox ul li a {
+    border: 2px solid #fff;
+    display: block;
+    height: 144px;
+}
+#scrollbox ul li a:hover {
+    border: 2px solid #f15d4d;
+}
+#scrollbox ul li img {
+    height: 144px;
+    width: 172px;
+}
+.pointer {
+    cursor: pointer;
+}
+#scrollbox span, #scrollbox1 span, #scrollbox2 span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#scrollbox, #scrollbox1, #scrollbox2 {
+    float: left;
+    overflow: hidden;
+    width: 980px;
+}
+.gd_out {
+    float: right;
+    height: 150px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 980px;
+}
+.gd_out h3 {
+    font-size: 14px;
+    height: 25px;
+    line-height: 20px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.gd_out h3 a {
+    color: #333;
+}
+.leftjt {
+    float: left;
+    overflow: hidden;
+    padding-top: 60px;
+    width: 37px;
+}
+.rightjt {
+    background: #fff none repeat scroll 0 0;
+    float: right;
+    margin-left: -30px;
+    overflow: hidden;
+    padding-top: 60px;
+    width: 38px;
+}
+.game-index-hotgift {
+    border: 1px solid #e0e0e0;
+}
+.game-index-pingce {
+    border: 1px solid #e0e0e0;
+}
+.game-index-pingce-inner {
+    height: 370px;
+    padding: 15px;
+}
+.game-index-pingce-inner ul {
+    position: relative;
+}
+.game-index-pingce-1 {
+    height: 180px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 258px;
+}
+.game-index-pingce-1 img {
+    height: 180px;
+    overflow: hidden;
+    width: 258px;
+}
+.game-index-pingce-1 a .game-index-pingce-img {
+    display: block;
+    height: 180px;
+    overflow: hidden;
+    width: 258px;
+}
+.game-index-pingce-1 a .game-index-pingce-infos {
+    display: block;
+    height: 180px;
+    margin-top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 258px;
+    z-index: 1;
+}
+.game-index-pingce-1 a .game-index-pingce-cover {
+    background: #111 none repeat scroll 0 0;
+    height: 180px;
+    opacity: 0.6;
+    position: absolute;
+    width: 258px;
+}
+.game-index-pingce-1 a .game-index-pingce-title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 238px;
+    z-index: 1;
+}
+.game-index-pingce-1 a .game-index-pingce-pingfen {
+    background: rgba(0, 0, 0, 0) url("iyx_pingce_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingce_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: block;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    width: 90px;
+}
+.game-index-pingce-1 a .game-index-pingce-pingfen strong {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll left center;
+    padding-left: 28px;
+}
+.game-index-pingce-1 a:hover .game-index-pingce-infos {
+    margin-top: -180px;
+}
+.game-index-pingce-1 a:hover .game-index-pingce-title {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 238px;
+}
+.game-index-pingce-2 {
+    height: 180px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 185px;
+    width: 258px;
+}
+.game-index-pingce-2 img {
+    height: 180px;
+    overflow: hidden;
+    width: 258px;
+}
+.game-index-pingce-2 a .game-index-pingce-img {
+    display: block;
+    height: 180px;
+    overflow: hidden;
+    width: 258px;
+}
+.game-index-pingce-2 a .game-index-pingce-infos {
+    display: block;
+    height: 180px;
+    margin-top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 258px;
+    z-index: 1;
+}
+.game-index-pingce-2 a .game-index-pingce-cover {
+    background: #111 none repeat scroll 0 0;
+    height: 180px;
+    opacity: 0.6;
+    position: absolute;
+    width: 258px;
+}
+.game-index-pingce-2 a .game-index-pingce-title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 238px;
+    z-index: 1;
+}
+.game-index-pingce-2 a .game-index-pingce-pingfen {
+    background: rgba(0, 0, 0, 0) url("iyx_pingce_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingce_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: block;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    width: 90px;
+}
+.game-index-pingce-2 a .game-index-pingce-pingfen strong {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll left center;
+    padding-left: 28px;
+}
+.game-index-pingce-2 a:hover .game-index-pingce-infos {
+    margin-top: -180px;
+}
+.game-index-pingce-2 a:hover .game-index-pingce-title {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 238px;
+}
+.game-index-pingce-3 {
+    height: 220px;
+    left: 263px;
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+}
+.game-index-pingce-3 img {
+    height: 220px;
+    overflow: hidden;
+    width: 200px;
+}
+.game-index-pingce-3 a .game-index-pingce-img {
+    display: block;
+    height: 220px;
+    overflow: hidden;
+    width: 200px;
+}
+.game-index-pingce-3 a .game-index-pingce-infos {
+    display: block;
+    height: 220px;
+    margin-top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    z-index: 1;
+}
+.game-index-pingce-3 a .game-index-pingce-cover {
+    background: #111 none repeat scroll 0 0;
+    height: 220px;
+    opacity: 0.6;
+    position: absolute;
+    width: 200px;
+}
+.game-index-pingce-3 a .game-index-pingce-title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 180px;
+    z-index: 1;
+}
+.game-index-pingce-3 a .game-index-pingce-pingfen {
+    background: rgba(0, 0, 0, 0) url("iyx_pingce_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingce_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: block;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    width: 90px;
+}
+#down_package_url_list ul li{padding: 5px;}
+#down_package_url_list ul li a{width: 100%;}
+
+.game-index-pingce-3 a .game-index-pingce-pingfen strong {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll left center;
+    padding-left: 28px;
+}
+.game-index-pingce-3 a:hover .game-index-pingce-infos {
+    margin-top: -220px;
+}
+.game-index-pingce-3 a:hover .game-index-pingce-title {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 180px;
+}
+.game-index-pingce-4 {
+    height: 140px;
+    left: 263px;
+    overflow: hidden;
+    position: absolute;
+    top: 225px;
+    width: 200px;
+}
+.game-index-pingce-4 img {
+    height: 140px;
+    overflow: hidden;
+    width: 200px;
+}
+.game-index-pingce-4 a .game-index-pingce-img {
+    display: block;
+    height: 140px;
+    overflow: hidden;
+    width: 200px;
+}
+.game-index-pingce-4 a .game-index-pingce-infos {
+    display: block;
+    height: 140px;
+    margin-top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    z-index: 1;
+}
+.game-index-pingce-4 a .game-index-pingce-cover {
+    background: #111 none repeat scroll 0 0;
+    height: 140px;
+    opacity: 0.6;
+    position: absolute;
+    width: 200px;
+}
+.game-index-pingce-4 a .game-index-pingce-title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 180px;
+    z-index: 1;
+}
+.game-index-pingce-4 a .game-index-pingce-pingfen {
+    background: rgba(0, 0, 0, 0) url("iyx_pingce_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingce_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: block;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    width: 90px;
+}
+.game-index-pingce-4 a .game-index-pingce-pingfen strong {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll left center;
+    padding-left: 28px;
+}
+.game-index-pingce-4 a:hover .game-index-pingce-infos {
+    margin-top: -140px;
+}
+.game-index-pingce-4 a:hover .game-index-pingce-title {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 180px;
+}
+.game-index-pingce-5 {
+    height: 140px;
+    left: 468px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 195px;
+}
+.game-index-pingce-5 img {
+    height: 140px;
+    overflow: hidden;
+    width: 195px;
+}
+.game-index-pingce-5 a .game-index-pingce-img {
+    display: block;
+    height: 140px;
+    overflow: hidden;
+    width: 200px;
+}
+.game-index-pingce-5 a .game-index-pingce-infos {
+    display: block;
+    height: 140px;
+    margin-top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    z-index: 1;
+}
+.game-index-pingce-5 a .game-index-pingce-cover {
+    background: #111 none repeat scroll 0 0;
+    height: 140px;
+    opacity: 0.6;
+    position: absolute;
+    width: 200px;
+}
+.game-index-pingce-5 a .game-index-pingce-title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 180px;
+    z-index: 1;
+}
+.game-index-pingce-5 a .game-index-pingce-pingfen {
+    background: rgba(0, 0, 0, 0) url("iyx_pingce_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingce_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: block;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    width: 90px;
+}
+.game-index-pingce-5 a .game-index-pingce-pingfen strong {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll left center;
+    padding-left: 28px;
+}
+.game-index-pingce-5 a:hover .game-index-pingce-infos {
+    margin-top: -140px;
+}
+.game-index-pingce-5 a:hover .game-index-pingce-title {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 180px;
+}
+.game-index-pingce-6 {
+    height: 220px;
+    left: 468px;
+    overflow: hidden;
+    position: absolute;
+    top: 145px;
+    width: 195px;
+}
+.game-index-pingce-6 img {
+    height: 220px;
+    overflow: hidden;
+    width: 195px;
+}
+.game-index-pingce-6 a .game-index-pingce-img {
+    display: block;
+    height: 220px;
+    overflow: hidden;
+    width: 200px;
+}
+.game-index-pingce-6 a .game-index-pingce-infos {
+    display: block;
+    height: 220px;
+    margin-top: -40px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    z-index: 1;
+}
+.game-index-pingce-6 a .game-index-pingce-cover {
+    background: #111 none repeat scroll 0 0;
+    height: 220px;
+    opacity: 0.6;
+    position: absolute;
+    width: 200px;
+}
+.game-index-pingce-6 a .game-index-pingce-title {
+    color: #fff;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    width: 180px;
+    z-index: 1;
+}
+.game-index-pingce-6 a .game-index-pingce-pingfen {
+    background: rgba(0, 0, 0, 0) url("iyx_pingce_pingfen.png")/*tpa=http://www.cgamex.com/static/images/iyx_pingce_pingfen.png*/ no-repeat scroll 0 0;
+    color: #ff4a39;
+    display: block;
+    font-size: 26px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    width: 90px;
+}
+.game-index-pingce-6 a .game-index-pingce-pingfen strong {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll left center;
+    padding-left: 28px;
+}
+.game-index-pingce-6 a:hover .game-index-pingce-infos {
+    margin-top: -220px;
+}
+.game-index-pingce-6 a:hover .game-index-pingce-title {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 180px;
+}
+.game-index-yczq-inner {
+    border: 1px solid #e0e0e0;
+    height: 438px;
+}
+.game-index-video {
+    border: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+.game-index-video ul {
+    padding: 10px 10px 10px 0;
+}
+.game-index-video ul li {
+    float: left;
+    margin-left: 33px;
+    width: 208px;
+}
+.game-index-video ul li img {
+    height: 140px;
+    width: 208px;
+}
+.game-index-video ul li a:hover img {
+    opacity: 0.9;
+}
+.game-index-video ul li a {
+    display: block;
+    position: relative;
+}
+.game-index-video ul li a .video-cover {
+    background: rgba(0, 0, 0, 0) url("iyx_video.png")/*tpa=http://www.cgamex.com/static/images/iyx_video.png*/ no-repeat scroll 0 0;
+    display: inline-block;
+    height: 54px;
+    left: 80px;
+    position: absolute;
+    top: 30px;
+    transition: all 0.3s ease 0s;
+    width: 54px;
+    z-index: 1;
+}
+.game-index-video ul li a:hover .video-cover {
+    background: rgba(0, 0, 0, 0) url("iyx_video.png")/*tpa=http://www.cgamex.com/static/images/iyx_video.png*/ no-repeat scroll 0 -54px;
+}
+.game-index-video ul li a span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+.game-index-col-3 {
+    padding-bottom: 30px;
+}
+.game-index-col-3-left {
+    float: left;
+    width: 270px;
+}
+.game-index-col-3-center {
+    float: left;
+    margin-left: 95px;
+    width: 270px;
+}
+.game-index-col-3-right {
+    float: right;
+    width: 270px;
+}
+.game-index-yuanchuang {
+}
+.game-index-yuanchuang li {
+    margin-top: 10px;
+    text-align: center;
+}
+.game-index-yuanchuang li img {
+    border: 3px solid #fff;
+    border-radius: 3px;
+    height: 145px;
+    width: 230px;
+}
+.game-index-yuanchuang li a:hover img {
+    border: 3px solid #ff4a39;
+}
+.game-index-yuanchuang li a:hover span {
+    color: #ff4a39;
+}
+.game-index-yuanchuang li a {
+    display: inline-block;
+    overflow: hidden;
+    width: 236px;
+}
+#game-xyphb em.up {
+    background: #fe7388 none repeat scroll 0 0;
+}
+#game-wyphb em.up {
+    background: #ff8d00 none repeat scroll 0 0;
+}
+#game-djphb em.up {
+    background: #08aea0 none repeat scroll 0 0;
+}
+#game-kaifu em.up {
+    background: #ff4a39 none repeat scroll 0 0;
+}
+.game-index-title-yxphb-1 {
+    height: 38px;
+}
+.game-index-title-yxphb-1 i {
+    background-image: url("iyx_gphbg.png")/*tpa=http://www.cgamex.com/static/images/iyx_gphbg.png*/;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-yxphb-1 span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #fe7388;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 216px;
+}
+.game-index-title-yxphb-2 {
+    height: 38px;
+}
+.game-index-title-yxphb-2 i {
+    background-image: url("iyx_gphbg.png")/*tpa=http://www.cgamex.com/static/images/iyx_gphbg.png*/;
+    background-position: 0 -30px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-yxphb-2 span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #ff8d00;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 216px;
+}
+.game-index-title-yxphb-3 {
+    height: 38px;
+}
+.game-index-title-yxphb-3 i {
+    background-image: url("iyx_gphbg.png")/*tpa=http://www.cgamex.com/static/images/iyx_gphbg.png*/;
+    background-position: 0 -60px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-yxphb-3 span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #08aea0;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 216px;
+}
+.game-index-title-yxpc {
+    height: 38px;
+}
+.game-index-title-yxpc i {
+    background-image: url("iyx_index_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_index_ico.png*/;
+    background-position: 0 -188px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    left: 10px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-yxpc span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #ff4a39;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 635px;
+}
+.game-index-title-yczq {
+    height: 38px;
+}
+.game-index-title-yczq i {
+    background-image: url("iyx_index_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_index_ico.png*/;
+    background-position: 0 -127px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    left: 10px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-yczq span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #ff4a39;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 215px;
+}
+.game-index-title-yxsp {
+    height: 38px;
+}
+.game-index-title-yxsp i {
+    background-image: url("iyx_index_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_index_ico.png*/;
+    background-position: 0 -254px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    left: 10px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-yxsp span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #ff4a39;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 940px;
+}
+.game-index-title-rmlb {
+    height: 38px;
+}
+.game-index-title-rmlb i {
+    background-image: url("iyx_index_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_index_ico.png*/;
+    background-position: 0 -62px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    left: 10px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-rmlb span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #ff4a39;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 940px;
+}
+.game-index-title-zqtj {
+    height: 38px;
+}
+.game-index-title-zqtj i {
+    background-image: url("iyx_index_ico.png")/*tpa=http://www.cgamex.com/static/images/iyx_index_ico.png*/;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 27px;
+    left: 10px;
+    position: relative;
+    top: 10px;
+    width: 46px;
+}
+.game-index-title-zqtj span {
+    border-bottom: 1px solid #e0e0e0;
+    color: #ff4a39;
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: -30px;
+    padding-top: 13px;
+    position: relative;
+    top: -2px;
+    width: 215px;
+}
+.slider {
+    background: #fff none repeat scroll 0 0;
+    height: 350px;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.slider .bd {
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+    width: 1000px;
+}
+.slider .bd li {
+    overflow: hidden;
+    width: 1000px;
+}
+.slider .bd li img {
+    display: block;
+    height: 350px;
+    width: 1000px;
+}
+.slider .tempWrap {
+    overflow: visible !important;
+}
+.slider .tempWrap ul {
+    margin-left: -1000px !important;
+}
+.slider .hd {
+    bottom: 20px;
+    height: 8px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.slider .hd li {
+    background: rgba(0, 0, 0, 0) url("slider-btn.png")/*tpa=http://www.cgamex.com/static/images/slider-btn.png*/ no-repeat scroll 0 -10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    line-height: 99px;
+    margin: 0 5px;
+    opacity: 0.6;
+    overflow: hidden;
+    width: 8px;
+}
+.slider .hd li.on {
+    background-position: 0 0;
+    opacity: 1;
+}
+.slider .pnBtn {
+    cursor: pointer;
+    height: 335px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.slider .prev {
+    left: -50%;
+    margin-left: -500px;
+}
+.slider .next {
+    left: 50%;
+    margin-left: 500px;
+}
+.slider .pnBtn .blackBg {
+    background: #000 none repeat scroll 0 0;
+    display: block;
+    height: 350px;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.slider .pnBtn .arrow {
+    display: none;
+    height: 335px;
+    position: absolute;
+    top: 0;
+    width: 60px;
+    z-index: 1;
+}
+.slider .pnBtn .arrow:hover {
+    opacity: 0.6;
+}
+.slider .prev .arrow {
+    background: rgba(0, 0, 0, 0) url("slider-arrow.png")/*tpa=http://www.cgamex.com/static/images/slider-arrow.png*/ no-repeat scroll -120px 0;
+    right: 0;
+}
+.slider .next .arrow {
+    background: rgba(0, 0, 0, 0) url("slider-arrow.png")/*tpa=http://www.cgamex.com/static/images/slider-arrow.png*/ no-repeat scroll 0 0;
+    left: 0;
+}
+.game-down-total {
+    font-size: 14px;
+}
+.tjlb_lq {
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    position: relative;
+    width: 150px;
+}
+.tjlb_lq * {
+    color: #fff;
+}
+.tjlb_lq strong {
+    font-weight: 400;
+    overflow: hidden;
+    width: 140px;
+}
+.tjlb_lq span {
+    background: #f15d4d none repeat scroll 0 0;
+    border: 1px solid #f15d4d;
+    border-radius: 3px;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 40px;
+}
+.tjlb_cover {
+    background: #000 none repeat scroll 0 0;
+    height: 30px;
+    margin-top: -40px;
+    opacity: 0.6;
+    position: relative;
+}
+#scrollbox ul li .tjlb_lq span:hover {
+    background: #d54d3f none repeat scroll 0 0;
+    border: 1px solid #d54d3f;
+    border-radius: 3px;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 40px;
+}
+#game-xyphb .txt-area .game-down-total a {
+    border: 1px solid #fe7388;
+    border-radius: 3px;
+    color: #fe7388;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 60px;
+}
+#game-xyphb .txt-area .game-down-total a:hover {
+    background: #fe7388 none repeat scroll 0 0;
+    color: #fff;
+}
+#game-wyphb .txt-area .game-down-total a {
+    border: 1px solid #fe8d00;
+    border-radius: 3px;
+    color: #fe8d00;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 60px;
+}
+#game-wyphb .txt-area .game-down-total a:hover {
+    background: #fe8d00 none repeat scroll 0 0;
+    color: #fff;
+}
+#game-djphb .txt-area .game-down-total a {
+    border: 1px solid #08aea0;
+    border-radius: 3px;
+    color: #08aea0;
+    display: inline-block;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 60px;
+}
+#game-djphb .txt-area .game-down-total a:hover {
+    background: #08aea0 none repeat scroll 0 0;
+    color: #fff;
+}
+.news-list-left-inner {
+}
+.news-list-left-inner ul {
+    margin: 0 auto;
+    width: 670px;
+}
+.news-list-left-inner ul li {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 5px;
+}
+.news-list-left-left {
+    float: left;
+    width: 245px;
+}
+.news-list-left-left img {
+    height: 115px;
+    width: 185px;
+}
+.news-list-left-right {
+    float: right;
+    margin-left: -50px;
+    width: 450px;
+}
+.news-list-left-right h3 {
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.news-list-left-right h3 a {
+    display: inline-block;
+    font-size: 18px;
+    overflow: hidden;
+}
+.news-list-left-right h3 span {
+    background: rgba(0, 0, 0, 0) url("ixy_index_pf.png")/*tpa=http://www.cgamex.com/static/images/ixy_index_pf.png*/ no-repeat scroll 0 8px;
+    color: #ff4a39;
+    float: right;
+    font-size: 22px;
+    padding-left: 25px;
+}
+.news-list-left-right p {
+    color: #666;
+    font-size: 14px;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.news-list-left-keyword-time {
+    color: #666;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.news-list-left-keyword {
+    color: #666;
+    float: left;
+    font-size: 12px;
+    overflow: hidden;
+    width: 290px;
+}
+.news-list-left-time {
+    background: rgba(0, 0, 0, 0) url("posttime.png")/*tpa=http://www.cgamex.com/static/images/posttime.png*/ no-repeat scroll left center;
+    color: #888;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.news-list-left-keyword span {
+    display: inline-block;
+    margin-right: 10px;
+}
+.game-content-right-bar ul li.current {
+    border: 1px solid #ff4a39;
+}
+.game-content-right-bar ul li.current a {
+    background: #ff4a39 none repeat scroll 0 0;
+    color: #fff;
+}
+.all-nodata-style {
+    background: rgba(0, 0, 0, 0) url("iyx_nodata.png")/*tpa=http://www.cgamex.com/static/images/iyx_nodata.png*/ no-repeat scroll 0 0;
+    height: 116px;
+    width: 667px;
+}
+.all-nodata-style p {
+    color: #555;
+    float: right;
+    height: 116px;
+    line-height: 116px;
+    text-align: center;
+    width: 480px;
+}
+.game-news-nodata {
+    height: 156px;
+    margin: 30px auto;
+    width: 326px;
+}
+li.has_sub ul li {
+    background: #474747 none repeat scroll 0 0;
+}
+li.has_sub ul {
+    color: #fff;
+    z-index: 500;
+    position: absolute;
+    display: none;
+    width: 100px;
+}
+li.has_sub ul li:not(:last-child){
+    border-bottom: 1px #666 solid;
+}
+.game_nav_inner ul li {
+    float: left;
+    width: 80px;
+    text-align: center;
+    display: inline;
+}
+.game_nav_inner>ul>li>a{
+    /*border-right: 1px #666 solid;*/
+}
+ul#paylist { display: block; height: auto; overflow: hidden; }
+ul#paylist li { display: block; float: left; width: 100px; height: auto; margin-left: 10px; }
+ul#paylist li img { border-radius: 10px; }
+ul#paylist li a { display: block; text-align: center; }
+.kaifu-list-out .input-sm { width: 200px; }
+.control-box { margin-top: 20px; }
+.control-box label { width: 140px; text-align: right; position: relative; top: 0px; }
+.payinput { padding-bottom: 20px; }
+.paybtn { padding-left: 140px; }
+label.pay_type, label.payto { width: auto; font-size: 12px; }
+.paycheckbox, .cardtypecheck { word-wrap: break-word; width: 490px; display: inline-block; float: left; }
+ul.pay_money_list { width: auto; height: auto; overflow: hidden; }
+ul.pay_money_list li { display: inline-table; width: 110px; float: left; height: 28px; line-height: 28px; padding: 0; border: 0; }
+.kaifu-list-out .other_money_input { width: 90px; }
+.moneylabel, .cardtypelabel { width: 140px; }
+.moneybox, .cardtypebox { display: block; float: left; padding-left: 5px; }
+#game_list ul li, #server_list ul li { border: 0; float: left; font-size: 13px; padding: 8px; }
+.modal-body { height: auto; overflow: hidden; }
+div.modal-dialog { top: 50px; }
+#pay_request p { padding: 15px; }
+#select_order ul li { padding: 5px }
+#select_order ul li label { margin-right: 5px; }
+li.has_sub li{width: 100px; height: 40px; line-height: 40px; }
+li.has_sub li a{font-size: 15px;}
+
+#hot_game_list li,#game-xyphb li,#game-wyphb li,#game-djphb li,.game-list-ul ul.game-list-ul-list li,.game-index-title-zqtj span,.game-index-col-3 h3 span{box-sizing:content-box;-moz-box-sizing:content-box; /* Firefox */-webkit-box-sizing:content-box; /* Safari */}
+.top_menu_in_l a.weichart_qrcode{ display: none; width: 160px; height: 160px;  margin-left: -40px; z-index: 99; background: #fff; border-radius: 5px; border:5px #ff4a39 solid;}
+ul.game-list-ul-list li.no_game{display: none; border: 0px; height: 65px; line-height: 65px; color: #f60;}

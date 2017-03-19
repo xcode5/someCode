@@ -310,8 +310,8 @@ form, input, button {
 }
 .game-list-ul-list-center {
     float: left;
-    margin-left: 20px;
-    width: 330px;
+    margin-left: 15px;
+    width: 335px;
 }
 .game-list-ul-list-right {
     float: right;
@@ -340,6 +340,7 @@ form, input, button {
     height: 25px;
     line-height: 25px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .game-list-ul-list-center h3 a:hover {
     left: 1px;

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>热七游戏_热七游戏网</title>
+    <meta name="keywords" content="热七游戏网,热七手游网，热七盒子,热七手游,热七,公益手游,BT盒子,手机游戏,稀有手游,稀有游戏,稀有手游,sf,sf手游,福利游戏,高福利,热门手游,sf网页游戏" />
+    <meta name="description" content="热七游戏网，热七游戏官网,热七盒子，发布大量热门高福利手游公益手游，聚集千万资深玩家，打造好玩高福利长期稳定精品，游戏代理创业，优质服务品质保证，热七游戏与你畅游"/>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <link rel="stylesheet" href="jui.css">
+    <link rel="stylesheet" href="base.css-mo.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bottom.css">
+    <link rel="stylesheet" href="button.css-v=20151018.css">
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="jquery.min.js" ></script>
+    <script type="text/javascript" src="jquery.cookie.js" ></script>
+    <script type="text/javascript" src="jui.js" ></script>
+    <script type="text/javascript" src="bootstrap.min.js" ></script>
+    <script type="text/javascript" src="linq.min.js" ></script>
+    <script type="text/javascript" src="http://r7.cgamex.com/static/scripts/gamelist.js"></script>
+    <script type="text/javascript" src="comm.js" ></script>
+</head>
+
+<body>
+<input id="navFlag" value="fenlei" type="hidden">
+    <!--通用头部 开始-->
+    <div class="top_out">
+	<div class="top_menu">
+		<div class="top_menu_in">
+            <div class="top_menu_in_l">
+                <ul class="navlist">
+                    <li><h3><font size="18"><span style="font-weight:normal;"><p><a target="_blank">为顺利领取礼包请在本站下载的端内注册一次<font color="#0000ff">r7开头的全新账号,请不要使用老账号自动登录.</font></p><font color="#0000ff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;~返利Q:303059970.玩家2群574365795~</font></a></span></font></h3></li>
+                    
+                    
+                    <li><span style="text-decoration:underline"><a target="_blank" href="http://cdn2.lp.sifuba.net/100000011076/100000011076_1000_1ac33c1932a3240e84ac84379c7bd7de.apk">点击下载本站客户端</a></span></li>
+                    
+                    
+                </ul>
+            </div>
+			<div class="top_menu_in_r">
+				<div id="session_false">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <script type="text/javascript">
+        
+        var browser={
+            versions:function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                                   android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                                   iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                                   iPad: u.indexOf('iPad') > -1, //是否iPad
+                                   webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                                   };
+                                   }(),
+                                   language:(navigator.browserLanguage || navigator.language).toLowerCase()
+                                   }
+                                   
+                                   if(browser.versions.ios||browser.versions.android||browser.versions.mobile){
+                                   
+                                   } else {
+                                    window.location.href = "all.html"
+                                   }
+                                   
+    </script>
+<div class="clear"></div>
+<div class="game_nav">
+	<div class="game_nav_inner">
+		<ul>
+									<li nav_flag="youxizhongxin"><a href="index1.html"  title="游戏">&nbsp;&nbsp;&nbsp;热门</a></li>
+												<li nav_flag="fenlei"><a href="all.html"  title="分类">分类</a></li>
+												<li nav_flag="kaifu"><a href="kf.html"  title="开服">开服</a></li>
+												<li nav_flag="chongzhi" class="has_sub">
+			<a   title="充值"></a>
+				<ul>
+										<li nav_flag=""><a href="pay.html"  title="手游充值">手游充值</a></li>
+										<li nav_flag=""><a href="webgame_pay.html"  title="页游充值"></a></li>
+									</ul>
+			</li>
+												<li nav_flag="tuiguang"><a href="user.html"  title="奖励"></a></li>
+								</ul>
+	</div>
+</div>
+
+<!-- 登录窗口相关 -->
+<div class="clear"></div>
+<!-- 登录窗口相关结束 -->
+
+<div class="modal down-package-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm dpm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">-选择下载</h4>
+            </div>
+            <div id="down_package_url_list" class="modal-body">
+                <ul>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="game_content_out">
+        <div class="game-cate-select mt15">
+
+            <div class="game-cate-select-inner">
+                                
+            </div>
+        </div>
+
+<div class="clear"></div>
+<script type="text/javascript">
+    
+    var browser={
+        versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {//移动终端浏览器版本信息
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                               android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                               iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                               iPad: u.indexOf('iPad') > -1, //是否iPad
+                               webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                               };
+                               }(),
+                               language:(navigator.browserLanguage || navigator.language).toLowerCase()
+                               }
+                               
+                               if(browser.versions.ios||browser.versions.android||browser.versions.mobile){
+                               //window.location.href = "index-1.htm"/*tpa=http://r7.cgamex.com/m/*/;
+                               /*document.write("<h3>各位玩家，欢迎您的加入！<font color='#ff0000'>请用本站下载的端内注册r7开头的账号登录游戏不要自动登录</font>，保证游戏内的各项福利的正常领取。本站每周都增加多款新游，所有游戏都正版授权，且由专业公司运营维护，打造最稳定手游平台。<font color='#ff0000'>客户端游戏盒子没有包含所有游戏，敬请关注本站永久域名r7game.com.</font>为及时获得返利活动上线礼包及新游信息请加群或客服QQ.</h3>");*/
+                               
+                               } else {
+                               
+                               /*document.write("<h5>各位玩家，欢迎您的加入！<font color='#ff0000'>请用本站下载的端内注册r7开头的账号登录游戏不要自动登录</font>，保证游戏内的各项福利的正常领取。本站每周都增加多款新游，所有游戏都正版授权，且由专业公司运营维护，打造最稳定手游平台。<font color='#ff0000'>客户端游戏盒子没有包含所有游戏，敬请关注本站永久域名r7game.com.</font>为及时获得返利活动上线礼包及新游信息请加群或客服QQ.</h5>");*/
+                               
+                               }
+</script>
+
+        <div class="game-list-title mt20">
+            <div class="game-list-title-in">
+                <h3>游戏列表 ></h3>
+            </div>
+        </div>
+        <p><div><h3><a href="all.html" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp更多精彩游戏&gt;</a><h3></div></p><br>
+        <div class="game-list-ul">
+    	<ul class="game-list-ul-list">
+	        <li class="no_game">
+			    亲，暂无该类游戏，试试其它游戏同样精彩~
+			</li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10169" target="_blank" title="皇途霸业下载">
+                    <img src="http://p1.bpimg.com/1949/b821300549420fed.png" title="皇途霸业下载" alt="皇途霸业下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10169" title="皇途霸业下载" target="_blank">皇途霸业(传奇类)<font color="#ff0000">(火)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="皇途霸业安卓版下载" title="皇途霸业安卓版下载">
+                            <img src="apple_ico.png" alt="皇途霸业苹果版下载,IOS下载" title="皇途霸业苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                        人魔大战跨时代精品之作！万人攻城千人混战！
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>92567</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10169)" target="_self" title="皇途霸业下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="3">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10174" target="_blank" title="永恒奇迹下载">
+                    <img src="http://img.static.sifuba.net/game/10174/10174_201x201.png" title="永恒奇迹下载" alt="永恒奇迹下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10174" title="永恒奇迹下载" target="_blank">永恒奇迹<font color="#ff0000">(火爆!)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="http://www.cgamex.com/static/images/android_ico.png" alt="永恒奇迹安卓版下载" title="永恒奇迹安卓版下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                            </div>
+                    <py>
+                    无尽畅爽跨服群P魔幻动作手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>101301</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10174)" target="_self" title="永恒奇迹下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10176"  target="_blank" title="霸道天下下载">
+                    <img src="http://img.static.sifuba.net/game/10176/10176_201x201.png"  title="霸道天下下载" alt="霸道天下下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10176"  title="霸道天下下载" target="_blank">霸道天下<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="霸道天下安卓版下载" title="霸道天下安卓版下载">
+                            <img src="apple_ico.png"  alt="霸道天下苹果版下载,IOS下载" title="三打白骨精苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    
+                    <py>武侠精品一款基于Unity 3D引擎的3D真即时ARPG游戏</py>
+                    
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>200554</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10176)" target="_self" title="霸道天下下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10065"  target="_blank" title="三打白骨精下载">
+                    <img src="http://p1.bpimg.com/1949/4d508025ee7780c2.png"  title="三打白骨精下载" alt="三打白骨精下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10065"  title="三打白骨精下载" target="_blank">三打白骨精<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="三打白骨精安卓版下载" title="三打白骨精安卓版下载">
+                            <img src="apple_ico.png"  alt="三打白骨精苹果版下载,IOS下载" title="三打白骨精苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    
+                    <py>贺岁电影正版授权,从大闹天宫开始再现西游历程!安卓iOS互通</py>
+                    
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>200554</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10065)" target="_self" title="三打白骨精下载">Android下载</a>
+                        <a href="javascript:down_fun(10065)" target="_self" title="三打白骨精下载">iOS下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10164" target="_blank" title="幻想与仙境下载">
+                    <img src="http://img.static.sifuba.net/game/10164/10164_201X201.png" title="幻想与仙境下载" alt="幻想与仙境下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10164" title="幻想与仙境下载" target="_blank">幻想与仙境<font color="#ff0000">(新)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="http://www.cgamex.com/static/images/android_ico.png" alt="幻想与仙境安卓版下载" title="幻想与仙境安卓版下载">
+                            </div>
+                    <py>
+                    战力颜值双爆表手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>69844</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10164)" target="_self" title="幻想与仙境下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10159" target="_blank" title="百变仙君下载">
+                    <img src="http://p1.bpimg.com/1949/4ba646a027cc2928.png" title="百变仙君下载" alt="百变仙君下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10159" title="百变仙君下载" target="_blank">百变仙君-2.16首服<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="百变仙君安卓版下载" title="百变仙君安卓版下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                            </div>
+                    <py>
+                        火爆修仙,极致画面,玩法丰富有趣的ARPG手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>64859</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10159)" target="_self" title="百变仙君下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10086"  target="_blank" title="赤月屠龙下载">
+                    <img src="http://img.static.sifuba.net/game/10086/10086_201x201.png"  title="赤月屠龙下载" alt="赤月屠龙下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10086"  title="赤月屠龙下载" target="_blank">赤月屠龙<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="赤月屠龙安卓版下载" title="赤月屠龙安卓版下载">
+                            <img src="apple_ico.png"  alt="赤月屠龙苹果版下载,IOS下载" title="赤月屠龙苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                        延续经典传奇,开创全新PK引擎.安卓iOS玩家互通
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>141022</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10086)" target="_self" title="赤月屠龙下载">Android下载</a>
+                        <a href="javascript:down_fun(10086)" target="_self" title="赤月屠龙下载">iOS下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="javascript:void"  target="_blank" title="斗苍穹下载">
+                    <img src="http://img.pyw.cn/g/144/2344/845e7afac78b28e6ee9c43354e379b05.png"  title="斗苍穹下载" alt="斗苍穹下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="javascript:void"  title="斗苍穹下载" target="_blank">斗苍穹<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="斗苍穹安卓版下载" title="斗苍穹安卓版下载">
+                            <img src="apple_ico.png"  alt="斗苍穹苹果版下载,IOS下载" title="斗苍穹苹果版下载,IOS下载">|<span>即时</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                        玄幻RPG 3D手游,苍穹bian BT版小说斗破苍穹改编
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>152419</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://pyw.cn/sdl/t/3lre" target="_self" title="究极进化数码兽下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10162" target="_blank" title="英雄爱超神下载">
+                    <img src="http://p1.bpimg.com/1949/006dee3e61b2386c.png" title="英雄爱超神下载" alt="英雄爱超神下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10162" title="英雄爱超神下载" target="_blank">英雄爱超神<font color="#ff0000">(新)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="英雄爱超神安卓版下载" title="英雄爱超神安卓版下载">
+                            </div>
+                    <py>
+                    炫酷3D动作卡牌手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>65547</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10162)" target="_self" title="英雄爱超神下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="javascript:void" target="_blank" title="梦幻神武下载">
+                    <img src="http://cdn.img.miyugame.com/official_web_img/images/1099/1484815931_512-512-1.jpg" title="梦幻神武下载" alt="梦幻神武下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="javascript:void" title="梦幻神武下载" target="_blank">刀剑狂舞<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="梦幻神武安卓版下载" title="梦幻神武安卓版下载">
+                            <img src="apple_ico.png" alt="梦幻神武苹果版下载,IOS下载" title="梦幻神武苹果版下载,IOS下载">|<span>即时</span> |<span class="pay_rate" style="text-decoration:underline"><a href="javascript:down_fun(303)">游戏福利</a> </span>
+                                </div>
+                    <py>
+                        新一代战斗手游,3D武侠-焦恩俊代言
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>71759</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://cdn.package.miyugame.com/1099/1354_1099_my_DAOJIANKUANGWU_5.0.122597.apk" target="_self" title="梦幻神武下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="javascript:void" target="_blank" title="梦幻神武下载">
+                    <img src="http://cdn.img.miyugame.com/official_web_img/images/1047/1483440719_1481532612_512.png" title="梦幻神武下载" alt="梦幻神武下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="javascript:void" title="梦幻神武下载" target="_blank">X战娘<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="梦幻神武安卓版下载" title="梦幻神武安卓版下载">
+                            <img src="apple_ico.png" alt="梦幻神武苹果版下载,IOS下载" title="梦幻神武苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate" style="text-decoration:underline"><a href="javascript:down_fun(301)">游戏福利</a> </span>
+                                </div>
+                    <py>
+                    新颖的“3D RPG+回合战斗”类型的手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>71759</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://cdn.miyugame.com/Apk/1047/1354_1047_my_xzn_.apk" target="_self" title="梦幻神武下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="10">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10171" target="_blank" title="梦幻回合下载">
+                    <img src="http://img.static.sifuba.net/game/10171/10171_201X201.png" title="梦幻回合下载" alt="梦幻回合下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10171" title="梦幻回合下载" target="_blank">梦幻回合<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="梦幻回合安卓版下载" title="梦幻回合安卓版下载">
+                            </div>
+                    <py>
+                    开放式新派梦幻(西游)回合制，放开玩
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>71627</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10171)" target="_self" title="梦幻回合下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="10">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10156"  target="_blank" title="梦幻择天下载">
+                    <img src="http://img.static.sifuba.net/game/10156/10156_201x201.png"  title="梦幻择天下载" alt="梦幻择天下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10156"  title="梦幻择天下载" target="_blank">梦幻择天<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="梦幻择天安卓版下载" title="梦幻择天安卓版下载">
+                            <img src="apple_ico.png"  alt="梦幻择天苹果版下载,IOS下载" title="梦幻择天苹果版下载,IOS下载">|<span>回合制</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                    梦幻择天再续梦幻(西游)回合新经典
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>111848</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10156)" target="_self" title="梦幻择天下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10153"  target="_blank" title="青云修仙传下载">
+                    <img src="http://img.static.sifuba.net/game/10153/10153_201x201.png"  title="青云修仙传下载" alt="青云修仙传下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10153"  title="青云修仙传下载" target="_blank">青云修仙传<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="青云修仙传安卓版下载" title="青云修仙传安卓版下载">
+                            <img src="apple_ico.png"  alt="青云修仙传苹果版下载,IOS下载" title="青云修仙传苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    
+                    <py>360无死角跨服PK动作手游,跨服PK安卓iOS玩家互通</py>
+                    
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>120674</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10153)" target="_self" title="青云修仙传下载">Android下载</a>
+                        <a href="javascript:down_fun(10153)" target="_self" title="青云修仙传下载">iOS下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="11">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10035"  target="_blank" title="神奇宝贝绿宝石下载">
+                    <img src="http://img.static.sifuba.net/game/10035/10035_201x201.png"  title="神奇宝贝绿宝石下载" alt="神奇宝贝绿宝石下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10035"  title="神奇宝贝绿宝石下载" target="_blank">神奇宝贝绿宝石<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="神奇宝贝绿宝石安卓版下载" title="神奇宝贝绿宝石安卓版下载">
+                            <img src="apple_ico.png"  alt="神奇宝贝绿宝石苹果版下载,IOS下载" title="神奇宝贝绿宝石苹果版下载,IOS下载">|<span>挂机放置</span> |<span class="pay_rate">1:100</span>
+                                </div>
+                    <py>
+                    一款操作简单，战斗绚丽的手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>194230</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10035)" target="_self" title="神奇宝贝绿宝石下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10130"  target="_blank" title="究极进化数码兽下载">
+                    <img src="http://img.static.sifuba.net/game/10130/10130_201x201.png"  title="究极进化数码兽下载" alt="究极进化数码兽下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10130"  title="究极进化数码兽下载" target="_blank">究极进化数码兽<font color="#ff0000">(火爆)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="究极进化数码兽安卓版下载" title="究极进化数码兽安卓版下载">
+                            <img src="apple_ico.png"  alt="究极进化数码兽苹果版下载,IOS下载" title="究极进化数码兽苹果版下载,IOS下载">|<span>卡牌</span> |<span class="pay_rate">1:100</span>
+                                </div>
+                    <py>
+                    宠物进化策略养成全新卡牌游戏
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>152419</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10130)" target="_self" title="究极进化数码兽下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10170" target="_blank" title="宠物小精灵下载">
+                    <img src="http://img.static.sifuba.net/game/10170/10170_201X201.png" title="宠物小精灵下载" alt="宠物小精灵下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10170" title="宠物小精灵下载" target="_blank">宠物小精灵</a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="宠物小精灵安卓版下载" title="宠物小精灵安卓版下载">
+                            <img src="apple_ico.png" alt="宠物小精灵苹果版下载,IOS下载" title="宠物小精灵苹果版下载,IOS下载">|<span>卡牌</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                    一款全新的宠物收集养成类游戏
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>86921</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10170)" target="_self" title="宠物小精灵下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10168" target="_blank" title="决战沙巴克下载">
+                    <img src="http://p1.bpimg.com/1949/844cbfae586f1da3.png" title="决战沙巴克下载" alt="决战沙巴克下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10168" title="决战沙巴克下载" target="_blank">决战沙巴克(传奇类)<font color="#ff0000">(火)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="决战沙巴克安卓版下载" title="决战沙巴克安卓版下载">
+                            <img src="apple_ico.png" alt="决战沙巴克苹果版下载,IOS下载" title="决战沙巴克苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                    经典传奇,畅快PK,再创永恒
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>95985</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10168)" target="_self" title="决战沙巴克下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10125" target="_blank" title="忍者萌剑传下载">
+                    <img src="http://p1.bpimg.com/1949/fc7b032542c537bb.png" title="忍者萌剑传下载" alt="忍者萌剑传下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10125" title="忍者萌剑传下载" target="_blank">忍者萌剑传<font color="#ff0000">(火)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="忍者萌剑传安卓版下载" title="忍者萌剑传安卓版下载">
+                            <img src="apple_ico.png" alt="忍者萌剑传苹果版下载,IOS下载" title="忍者萌剑传苹果版下载,IOS下载">|<span>卡牌</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                    爆笑吐槽Q版动漫动作卡牌手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>89608</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10125)" target="_self" title="忍者萌剑传下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="3">
+                <div class="game-list-ul-list-left"><a href="javascript:void" target="_blank" title="X银魂下载">
+                    <img src="http://cdn.img.miyugame.com/official_web_img/images/1096/1486717536_512.png" title="X银魂下载" alt="X银魂下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="javascript:void" title="X银魂下载" target="_blank">X战魂<font color="#ff0000">(新)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="X银魂安卓版下载" title="X银魂安卓版下载"> |<span class="pay_rate" style="text-decoration:underline"><a href="javascript:down_fun(304)">游戏福利</a> </span>
+                            </div>
+                    <py>
+                        360°自由操控游戏顶级画面质感完爆BOSS,3V3实时对战
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>71627</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://cdn.package.miyugame.com/1096/1354_1096_my_yinhun_1.0.8.apk" target="_self" title="X银魂下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="10">
+                <div class="game-list-ul-list-left"><a href="javascript:void" target="_blank" title="少年武侠下载">
+                    <img src="http://cdn.img.miyugame.com/official_web_img/images/1097/1487146926_512.jpg" title="少年武侠下载" alt="少年武侠下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="javascript:void" title="少年武侠下载" target="_blank">少年武侠-2.16首服<font color="#ff0000">(新)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="少年武侠安卓版下载" title="少年武侠安卓版下载"> |<span class="pay_rate" style="text-decoration:underline"><a href="javascript:down_fun(305)">游戏福利</a> </span>
+                            </div>
+                    <py>
+                        新一代自由武侠手游自动回合制，六大角色模型三大阵营
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>71627</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://cdn.package.miyugame.com/1097/1354_1097_my_shaonianhaoxiachuan_1.00.apk" target="_self" title="少年武侠下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10117"  target="_blank" title="烈火屠龙下载">
+                    <img src="http://img.static.sifuba.net/game/10117/10117_201x201.png"  title="烈火屠龙下载" alt="烈火屠龙下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10117"  title="烈火屠龙下载" target="_blank">烈火屠龙(传奇类)</a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="烈火屠龙安卓版下载" title="烈火屠龙安卓版下载">
+                            <img src="apple_ico.png"  alt="烈火屠龙苹果版下载,IOS下载" title="烈火屠龙苹果版下载,IOS下载">|<span>即时战斗</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                    硬派PK的ARPG全新大作
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>179131</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10117)" target="_self" title="烈火屠龙下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="2">
+                <div class="game-list-ul-list-left"><a href="detail306.html"  target="_blank" title="烈火传下载">
+                    <img src="http://cdn.img.miyugame.com/official_web_img/images/1103/1487321846_512-512.png"  title="烈火传下载" alt="烈火传下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail306.html"  title="烈火传下载" target="_blank">烈火传<font color="#ff0000">(新游)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="烈火传下载" title="烈火传下载">
+                            |<span>即时战斗</span> | <span class="pay_rate" style="text-decoration:underline"><a href="detail306.html">游戏福利</a> </span>
+                            </div>
+                    
+                    <py>2017新火爆传奇类网游,神秘副本强大装备,土城pk</py>
+                    
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>200554</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://cdn.package.miyugame.com/1103/1354_1103_my_liehuochuan_1.0.apk" target="_self" title="烈火传下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10167" target="_blank" title="英雄联萌2下载">
+                    <img src="http://img.static.sifuba.net/game/10167/10167_201x201.png" title="英雄联萌2下载" alt="英雄联萌2下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10167" title="英雄联萌2下载" target="_blank">英雄联萌2<font color="#ff0000">(新)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png" alt="英雄联萌2安卓版下载" title="英雄联萌2安卓版下载">
+                            </div>
+                    <py>
+                    5V5对战让你充满竞技激情
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>99286</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10167)" target="_self" title="英雄联萌2下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="5">
+                <div class="game-list-ul-list-left"><a href="detail.html?gameid=10118"  target="_blank" title="盗墓OL下载">
+                    <img src="http://img.static.sifuba.net/game/10118/10118_201x201.png"  title="盗墓OL下载" alt="盗墓OL下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="detail.html?gameid=10118"  title="盗墓OL下载" target="_blank">盗墓OL<font color="#ff0000">(火)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="盗墓OL安卓版下载" title="盗墓OL安卓版下载">
+                            <img src="apple_ico.png"  alt="盗墓OL苹果版下载,IOS下载" title="盗墓OL苹果版下载,IOS下载">|<span>冒险游戏</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                    万千盗迷齐聚大型3D探险手游
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>206983</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="javascript:down_fun(10118)" target="_self" title="盗墓OL下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+            <li data-type="8">
+                <div class="game-list-ul-list-left"><a href="javascript:void"  target="_blank" title="西游封仙下载">
+                    <img src="http://cdn.img.miyugame.com/official_web_img/images/1076/1481533402_512.png"  title="西游封仙下载" alt="西游封仙下载"></a></div>
+                <div class="game-list-ul-list-center">
+                    <h3><a href="javascript:void"  title="西游封仙下载" target="_blank">西游封仙<font color="#ff0000">(火)</font></a></h3>
+                    <div class="game-list-ul-list-center-cate">
+                        <img src="android_ico.png"  alt="西游封仙安卓版下载" title="西游封仙安卓版下载">
+                            <img src="apple_ico.png"  alt="西游封仙苹果版下载,IOS下载" title="西游封仙苹果版下载,IOS下载">|<span>卡牌</span> |<span class="pay_rate">1:200</span>
+                                </div>
+                    <py>
+                        3D卡牌描述西游英雄们精彩冒险历程
+                    </py>
+                </div>
+                <div class="game-list-ul-list-right">
+                    <!--<div class="game-list-ul-list-right-score">下载次数:<span>152419</span>次</div>-->
+                    <div class="game-list-ul-list-right-down">
+                        <a href="http://cdn.miyugame.com/Apk/1076/1354_1076_my_XIYOUFENGXIAN_3.0.0.apk" target="_self" title="西游封仙下载">Android下载</a>
+                    </div>
+                </div>
+            </li>
+            
+                   <div><h3><a href="all.html" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp更多精彩游戏&gt;</a><h3></div>
+        	<div class="clear"></div>
+        </ul>
+    </div>
+    </div>
+
+
+    <!--通用底部 开始-->
+    <div id="footer">
+	<div class="footer-cr-fl-out">
+		<div class="footer-cr-fl-inner">
+            <div class="index-aboutus">
+                    <a href=""  rel="nofollow">家长监护</a>&nbsp;
+            | 玩家QQ群 574365795
+                <!-- 
+                |<a href="javascript:;" rel="nofollow">免责声明</a>
+                |<a href="javascript:;" rel="nofollow">网站地图</a>
+                |<a href="javascript:;" rel="nofollow">关键词索引</a>
+                |<a href="javascript:;" rel="nofollow">
+                 -->
+            </div>
+            <div class="copyright">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</div>
+                <div class="copyright">
+                    <script type="text/javascript">
+                        {
+                            document.write(
+                                    '<span></span><span></span>r7game.com<span></span>版权所有<span></span>'
+                                    + ''
+                                    + ''
+                                    + ''
+                                );
+                        }
+                    
+                    </script>
+                    
+                    <!-- script type="text/javascript">
+                        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1256376982'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256376982%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+                    </script-->
+                    <script type="text/javascript">
+                        var cnzz_protocol = (("https:" == document.location.protocol) ? " httpsx://" : " httpx://");
+//                        document.write(unescape("%3Cspan id='cnzz_stat_icon_1260239884'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "' type='text/javascript'%3E%3C/script%3E"));-->
+                    </script>
+                    <!--公司名字--><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<script type="text/javascript">
+$(function(){
+    var selfNavFlag = $("#navFlag").val();
+    //console.log(selfNavFlag);
+
+    $(".game_nav ul li").each(function () {
+        if($(this).attr("nav_flag")==selfNavFlag){
+            $(this).addClass("yx_cur");
+            return false;
+        }
+    })
+});
+</script>
+
+
+<script type="text/javascript">
+
+var browser={
+    versions:function(){
+        var u = navigator.userAgent, app = navigator.appVersion;
+        return {//移动终端浏览器版本信息
+            trident: u.indexOf('Trident') > -1, //IE内核
+            presto: u.indexOf('Presto') > -1, //opera内核
+            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                           android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                           iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                           iPad: u.indexOf('iPad') > -1, //是否iPad
+                           webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                           };
+                           }(),
+                           language:(navigator.browserLanguage || navigator.language).toLowerCase()
+                           }
+                           
+                           if(browser.versions.ios||browser.versions.android||browser.versions.mobile){
+                           
+                           }else{
+                           /*window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"101.5"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];*/
+                           }
+                           
+
+</script>
+    <!--通用底部 结束-->
+</body>
+
+</html>

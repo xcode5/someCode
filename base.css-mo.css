@@ -267,12 +267,12 @@ form, input, button {
 }
 .game-list-ul-list {
     width: 1000px;
-    min-height: 600px;
+    min-height: 1200px;
 }
 .game-list-ul-list li {
     border-bottom: 1px dashed #ccc;
     float: left;
-    height: 150px;
+    height: 180px;
     margin-left: 25px;
     padding: 20px 0;
     width: 460px;
@@ -315,7 +315,7 @@ form, input, button {
 }
 .game-list-ul-list-right {
     float: right;
-    font-size: 13px;
+    font-size: 18px;
 }
 .game-list-ul-list-left img {
     border-radius: 15px;
@@ -328,7 +328,7 @@ form, input, button {
     top: 1px;
 }
 .game-list-ul-list-center py {
-    color: #000;
+    color: #666;
     font-size: 23px;
     height: 30px;
     line-height: 30px;
@@ -336,9 +336,9 @@ form, input, button {
     overflow: hidden;
 }
 .game-list-ul-list-center h3 {
-    font-size: 25px;
-    height: 25px;
-    line-height: 25px;
+    font-size: 29px;
+    height: 27px;
+    line-height: 29px;
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -368,18 +368,18 @@ form, input, button {
     border-radius: 4px;
     color: #fff;
     display: inline-block;
-    height: 40px;
+    height: 45px;
     line-height: 40px;
     margin-right: 8px;
     text-align: center;
-    width: 100px;
+    width: 110px;
 }
 .game-list-ul-list-right-down a:hover {
     background: #e13c2c none repeat scroll 0 0;
 }
 .game-list-ul-list-center p{font-size: 14px;}
 .game-list-ul-list-center-cate span{
-    font-size: 14px;
+    font-size: 20px;
 }
 .pay_rate{font-weight: 600;color: #e13c2c;}
 .game-list-ul-list-center-cate img {

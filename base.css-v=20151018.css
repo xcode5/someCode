@@ -335,6 +335,16 @@ form, input, button {
     margin-top: 10px;
     overflow: hidden;
 }
+.game-list-ul-list-center py {
+    color: #666;
+    font-size: 14px;
+    height: 54px;
+    line-height: 18px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+}
 .game-list-ul-list-center h3 {
     font-size: 16px;
     height: 25px;
